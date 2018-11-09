@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042306502195D18500DDB75C /* PostsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0423064F2195D18500DDB75C /* PostsListCell.xib */; };
+		042306522195D7C400DDB75C /* PostsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042306512195D7C400DDB75C /* PostsListCell.swift */; };
 		04603B75219327DE00453ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04603B74219327DE00453ADC /* AppDelegate.swift */; };
 		04603B7C219327DF00453ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04603B7B219327DF00453ADC /* Assets.xcassets */; };
 		04603B7F219327DF00453ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04603B7D219327DF00453ADC /* LaunchScreen.storyboard */; };
 		54682932B9ED46D9CEECACCD /* Pods_SimplePostsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2509C8F6DD7D5F1035C4DEF /* Pods_SimplePostsAppTests.framework */; };
+		8CB970E78EF77BD83B2D01C5 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB973A1C6986993D1108162 /* String+localized.swift */; };
+		8CB97985347C16A159D480A9 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB978DD0CB78FA73B162305 /* PostsListViewController.swift */; };
+		8CB97ED33120917B32499A20 /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB971A96FA281946F46CDB8 /* MainNavigator.swift */; };
 		9A71CDA78854088965EE103B /* Pods_SimplePostsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D848CE7199D8D7643880C4 /* Pods_SimplePostsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0423064F2195D18500DDB75C /* PostsListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsListCell.xib; sourceTree = "<group>"; };
+		042306512195D7C400DDB75C /* PostsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListCell.swift; sourceTree = "<group>"; };
 		04603B71219327DE00453ADC /* SimplePostsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplePostsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04603B74219327DE00453ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04603B7B219327DF00453ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,6 +42,9 @@
 		0A74E4CA4A385A0DC72D4827 /* Pods-SimplePostsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePostsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePostsAppTests/Pods-SimplePostsAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		35D848CE7199D8D7643880C4 /* Pods_SimplePostsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplePostsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D90D4C9BC4AEB58702D7FB5 /* Pods-SimplePostsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePostsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp.release.xcconfig"; sourceTree = "<group>"; };
+		8CB971A96FA281946F46CDB8 /* MainNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
+		8CB973A1C6986993D1108162 /* String+localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+localized.swift"; sourceTree = "<group>"; };
+		8CB978DD0CB78FA73B162305 /* PostsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
 		B2509C8F6DD7D5F1035C4DEF /* Pods_SimplePostsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplePostsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33FBEF13E04AF5980162FE6 /* Pods-SimplePostsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePostsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FF9538709610E74C327DF82A /* Pods-SimplePostsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePostsAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePostsAppTests/Pods-SimplePostsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +106,8 @@
 				04603B7B219327DF00453ADC /* Assets.xcassets */,
 				04603B7D219327DF00453ADC /* LaunchScreen.storyboard */,
 				04603B80219327DF00453ADC /* Info.plist */,
+				8CB970103B288FC976F0EB22 /* Modules */,
+				8CB97CA04B437D76E974C90B /* Extensions */,
 			);
 			path = SimplePostsApp;
 			sourceTree = "<group>";
@@ -117,6 +129,41 @@
 				0A74E4CA4A385A0DC72D4827 /* Pods-SimplePostsAppTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8CB970103B288FC976F0EB22 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8CB97BFABA5B121CE14B3EDC /* PostList */,
+				8CB97C2BDD2F2573498D8FB2 /* Initializing */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8CB97BFABA5B121CE14B3EDC /* PostList */ = {
+			isa = PBXGroup;
+			children = (
+				8CB978DD0CB78FA73B162305 /* PostsListViewController.swift */,
+				0423064F2195D18500DDB75C /* PostsListCell.xib */,
+				042306512195D7C400DDB75C /* PostsListCell.swift */,
+			);
+			path = PostList;
+			sourceTree = "<group>";
+		};
+		8CB97C2BDD2F2573498D8FB2 /* Initializing */ = {
+			isa = PBXGroup;
+			children = (
+				8CB971A96FA281946F46CDB8 /* MainNavigator.swift */,
+			);
+			path = Initializing;
+			sourceTree = "<group>";
+		};
+		8CB97CA04B437D76E974C90B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8CB973A1C6986993D1108162 /* String+localized.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04603B7F219327DF00453ADC /* LaunchScreen.storyboard in Resources */,
+				042306502195D18500DDB75C /* PostsListCell.xib in Resources */,
 				04603B7C219327DF00453ADC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +373,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04603B75219327DE00453ADC /* AppDelegate.swift in Sources */,
+				042306522195D7C400DDB75C /* PostsListCell.swift in Sources */,
+				8CB97985347C16A159D480A9 /* PostsListViewController.swift in Sources */,
+				8CB97ED33120917B32499A20 /* MainNavigator.swift in Sources */,
+				8CB970E78EF77BD83B2D01C5 /* String+localized.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
