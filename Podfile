@@ -3,6 +3,7 @@ platform :ios, '12.0'
 def rxswift
 	pod 'RxSwift'
 	pod 'RxCocoa'	
+	pod 'RxDataSources'
 end
 
 

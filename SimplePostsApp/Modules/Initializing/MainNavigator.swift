@@ -6,10 +6,10 @@
 import Foundation
 import UIKit
 
-public final class MainNavigator {
+ final class MainNavigator {
     private let window: UIWindow
 
-    public init(window: UIWindow) {
+     init(window: UIWindow) {
         self.window = window
     }
 

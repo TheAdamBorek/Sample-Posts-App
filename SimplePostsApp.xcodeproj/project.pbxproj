@@ -12,6 +12,13 @@
 		04603B75219327DE00453ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04603B74219327DE00453ADC /* AppDelegate.swift */; };
 		04603B7C219327DF00453ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04603B7B219327DF00453ADC /* Assets.xcassets */; };
 		04603B7F219327DF00453ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04603B7D219327DF00453ADC /* LaunchScreen.storyboard */; };
+		1F0FA2467C86B30BF3645F82 /* UIImage+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA4F20F5306217E3C1322 /* UIImage+UIColor.swift */; };
+		1F0FA30AB64AB3C944669A46 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAE9D21C58E360A5E1A9D /* BaseViewController.swift */; };
+		1F0FA3A76658DD261143076F /* PostsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA5FA6CB4B328C1AA4ABD /* PostsListViewModel.swift */; };
+		1F0FA70953D155F6D92E15B4 /* XibBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA3FB3CF638F0E377C826 /* XibBased.swift */; };
+		1F0FAB2AE1E9CB4AD7C24C6A /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAC8D78088C42BE31A196 /* ReusableView.swift */; };
+		1F0FAB6A1554A5670C71ABA7 /* UIView+PinToEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAFA9ECA015BEC60BFCAD /* UIView+PinToEdges.swift */; };
+		1F0FABD8C16EF39C205A2BB4 /* TitleStylingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAA3DCB995A4314502DC3 /* TitleStylingStrategy.swift */; };
 		54682932B9ED46D9CEECACCD /* Pods_SimplePostsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2509C8F6DD7D5F1035C4DEF /* Pods_SimplePostsAppTests.framework */; };
 		8CB970E78EF77BD83B2D01C5 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB973A1C6986993D1108162 /* String+localized.swift */; };
 		8CB97985347C16A159D480A9 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB978DD0CB78FA73B162305 /* PostsListViewController.swift */; };
@@ -40,6 +47,13 @@
 		04603B85219327E000453ADC /* SimplePostsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplePostsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04603B8B219327E000453ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A74E4CA4A385A0DC72D4827 /* Pods-SimplePostsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePostsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePostsAppTests/Pods-SimplePostsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F0FA3FB3CF638F0E377C826 /* XibBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibBased.swift; sourceTree = "<group>"; };
+		1F0FA4F20F5306217E3C1322 /* UIImage+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+UIColor.swift"; sourceTree = "<group>"; };
+		1F0FA5FA6CB4B328C1AA4ABD /* PostsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListViewModel.swift; sourceTree = "<group>"; };
+		1F0FAA3DCB995A4314502DC3 /* TitleStylingStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleStylingStrategy.swift; sourceTree = "<group>"; };
+		1F0FAC8D78088C42BE31A196 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		1F0FAE9D21C58E360A5E1A9D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1F0FAFA9ECA015BEC60BFCAD /* UIView+PinToEdges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PinToEdges.swift"; sourceTree = "<group>"; };
 		35D848CE7199D8D7643880C4 /* Pods_SimplePostsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplePostsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D90D4C9BC4AEB58702D7FB5 /* Pods-SimplePostsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePostsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp.release.xcconfig"; sourceTree = "<group>"; };
 		8CB971A96FA281946F46CDB8 /* MainNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
@@ -120,6 +134,25 @@
 			path = SimplePostsAppTests;
 			sourceTree = "<group>";
 		};
+		1F0FA1CB0745A2308D1908BC /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				1F0FAA3DCB995A4314502DC3 /* TitleStylingStrategy.swift */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
+		1F0FA2CBE00FC03DFF289E20 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1F0FAE9D21C58E360A5E1A9D /* BaseViewController.swift */,
+				1F0FA1CB0745A2308D1908BC /* Styling */,
+				1F0FAC8D78088C42BE31A196 /* ReusableView.swift */,
+				1F0FA3FB3CF638F0E377C826 /* XibBased.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		5A95FA09793502E41F16B161 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +169,7 @@
 			children = (
 				8CB97BFABA5B121CE14B3EDC /* PostList */,
 				8CB97C2BDD2F2573498D8FB2 /* Initializing */,
+				1F0FA2CBE00FC03DFF289E20 /* Shared */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -146,6 +180,7 @@
 				8CB978DD0CB78FA73B162305 /* PostsListViewController.swift */,
 				0423064F2195D18500DDB75C /* PostsListCell.xib */,
 				042306512195D7C400DDB75C /* PostsListCell.swift */,
+				1F0FA5FA6CB4B328C1AA4ABD /* PostsListViewModel.swift */,
 			);
 			path = PostList;
 			sourceTree = "<group>";
@@ -162,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				8CB973A1C6986993D1108162 /* String+localized.swift */,
+				1F0FA4F20F5306217E3C1322 /* UIImage+UIColor.swift */,
+				1F0FAFA9ECA015BEC60BFCAD /* UIView+PinToEdges.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -298,18 +335,22 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +418,13 @@
 				8CB97985347C16A159D480A9 /* PostsListViewController.swift in Sources */,
 				8CB97ED33120917B32499A20 /* MainNavigator.swift in Sources */,
 				8CB970E78EF77BD83B2D01C5 /* String+localized.swift in Sources */,
+				1F0FA30AB64AB3C944669A46 /* BaseViewController.swift in Sources */,
+				1F0FABD8C16EF39C205A2BB4 /* TitleStylingStrategy.swift in Sources */,
+				1F0FAB2AE1E9CB4AD7C24C6A /* ReusableView.swift in Sources */,
+				1F0FA70953D155F6D92E15B4 /* XibBased.swift in Sources */,
+				1F0FA3A76658DD261143076F /* PostsListViewModel.swift in Sources */,
+				1F0FA2467C86B30BF3645F82 /* UIImage+UIColor.swift in Sources */,
+				1F0FAB6A1554A5670C71ABA7 /* UIView+PinToEdges.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

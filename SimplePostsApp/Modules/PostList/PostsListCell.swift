@@ -9,7 +9,35 @@
 import Foundation
 import UIKit
 
-final class PostsListCell: UITableViewCell {
+final class PostsListCell: RxTableViewCell {
     @IBOutlet weak var pictureImageView: UIImageView!
-    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var bodyLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var authorAvatarView: UIImageView!
+    @IBOutlet weak var createdDateLabel: UILabel!
+    @IBOutlet weak var readingTimeLabel: UILabel!
+
+    var viewModel: PostsListCellViewModelType? {
+        didSet {
+            disposeOldBinding()
+            bind()
+        }
+    }
+
+    private func bind() {
+        guard let viewModel = viewModel else { return }
+        titleLabel.text = viewModel.title
+        bodyLabel.text = viewModel.body
+        authorLabel.text = viewModel.authorName
+        createdDateLabel.text = viewModel.createdDate
+        readingTimeLabel.text = viewModel.readTime
+        viewModel.authorAvatar
+                .drive(pictureImageView.rx.image)
+                .disposed(by: disposeBag)
+    }
+}
+
+extension PostsListCell: XibBased {
+    static let xibFileName = "PostsListCell"
 }
