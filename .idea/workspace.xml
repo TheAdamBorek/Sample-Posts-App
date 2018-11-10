@@ -2,30 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38fdad5b-636e-4dd9-835c-cfac539a6447" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Extensions/UIImage+UIColor.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Extensions/UIView+PinToEdges.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Shared/BaseViewController.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Shared/ReusableView.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Shared/Styling/TitleStylingStrategy.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Shared/XibBased.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsAppTests/Modules/PostsList/PostsListSnapshotTest.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp-acknowledgements.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp-acknowledgements.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp-frameworks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp-frameworks.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp.debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp.release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsAppTests/Pods-SimplePostsAppTests-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsAppTests/Pods-SimplePostsAppTests-acknowledgements.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsAppTests/Pods-SimplePostsAppTests-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsAppTests/Pods-SimplePostsAppTests-acknowledgements.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsAppTests/Pods-SimplePostsAppTests-frameworks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsAppTests/Pods-SimplePostsAppTests-frameworks.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsAppTests/Pods-SimplePostsAppTests.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsAppTests/Pods-SimplePostsAppTests.debug.xcconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsAppTests/Pods-SimplePostsAppTests.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SimplePostsAppTests/Pods-SimplePostsAppTests.release.xcconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimplePostsApp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/Initializing/MainNavigator.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Initializing/MainNavigator.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListCell.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListCell.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListCell.xib" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListCell.xib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewController.swift" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,11 +24,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_0728123C-EFB5-4A0C-852A-6BDFF91E891F" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+            <state relative-caret-position="1288">
+              <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+              <folding>
+                <element signature="e#102#119#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Modules/PostsList/PostsListSnapshotTest.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#102#119#0" expanded="true" />
               </folding>
@@ -51,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SimplePostsApp/Extensions/UIView+PinToEdges.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
+            <state relative-caret-position="437">
               <caret line="20" column="93" selection-start-line="20" selection-start-column="93" selection-end-line="20" selection-end-column="93" />
               <folding>
                 <element signature="e#102#119#0" expanded="true" />
@@ -94,6 +94,7 @@
         <option value="$PROJECT_DIR$/SimplePostsApp/Extensions/UIImage+UIColor.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Extensions/UIView+PinToEdges.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewController.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsAppTests/Modules/PostsList/PostsListSnapshotTest.swift" />
       </list>
     </option>
   </component>
@@ -109,66 +110,41 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="Pods" type="1d218c8b:XcodeProjectNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
               <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
-              <item name="SimplePostsApp" type="fcab9f18:XcodeViewNode" />
+              <item name="SimplePostsAppTests" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
-              <item name="SimplePostsApp" type="fcab9f18:XcodeViewNode" />
-              <item name="Extensions" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
-              <item name="SimplePostsApp" type="fcab9f18:XcodeViewNode" />
+              <item name="SimplePostsAppTests" type="fcab9f18:XcodeViewNode" />
               <item name="Modules" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
-              <item name="SimplePostsApp" type="fcab9f18:XcodeViewNode" />
+              <item name="SimplePostsAppTests" type="fcab9f18:XcodeViewNode" />
               <item name="Modules" type="fcab9f18:XcodeViewNode" />
-              <item name="PostList" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
-              <item name="SimplePostsApp" type="fcab9f18:XcodeViewNode" />
-              <item name="Modules" type="fcab9f18:XcodeViewNode" />
-              <item name="Shared" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
-              <item name="SimplePostsApp" type="fcab9f18:XcodeViewNode" />
-              <item name="Modules" type="fcab9f18:XcodeViewNode" />
-              <item name="Shared" type="fcab9f18:XcodeViewNode" />
-              <item name="Styling" type="fcab9f18:XcodeViewNode" />
+              <item name="PostsList" type="fcab9f18:XcodeViewNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Cidr.FilesView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="SimplePostsApp" />
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="SimplePostsAppTests" />
     <property name="com.jetbrains.cidr.execution.build.XcodeMessageFilterConfiguration.GENERIC" value="false" />
     <property name="com.jetbrains.cidr.execution.build.XcodeMessageFilterConfiguration.INFO" value="false" />
     <property name="com.jetbrains.cidr.execution.build.XcodeMessageFilterConfiguration.NOTE" value="false" />
@@ -203,14 +179,14 @@
     <frame x="0" y="0" width="1566" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31430447" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39107612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Messages" order="4" sideWeight="0.49946752" weight="0.25346112" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946752" weight="0.48114902" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.28186715" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" weight="0.28186715" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -369,9 +345,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+          <folding>
+            <element signature="e#102#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SimplePostsApp/Extensions/UIView+PinToEdges.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
+        <state relative-caret-position="437">
           <caret line="20" column="93" selection-start-line="20" selection-start-column="93" selection-end-line="20" selection-end-column="93" />
           <folding>
             <element signature="e#102#119#0" expanded="true" />
@@ -379,10 +365,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewController.swift">
+    <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Modules/PostsList/PostsListSnapshotTest.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+        <state relative-caret-position="184">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#102#119#0" expanded="true" />
           </folding>

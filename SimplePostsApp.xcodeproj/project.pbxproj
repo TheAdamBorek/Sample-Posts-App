@@ -19,7 +19,9 @@
 		1F0FAB2AE1E9CB4AD7C24C6A /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAC8D78088C42BE31A196 /* ReusableView.swift */; };
 		1F0FAB6A1554A5670C71ABA7 /* UIView+PinToEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAFA9ECA015BEC60BFCAD /* UIView+PinToEdges.swift */; };
 		1F0FABD8C16EF39C205A2BB4 /* TitleStylingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAA3DCB995A4314502DC3 /* TitleStylingStrategy.swift */; };
+		1F0FAD60B120C0502C027677 /* PostsListSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA55F2FC9526EEEB2A127 /* PostsListSnapshotTest.swift */; };
 		54682932B9ED46D9CEECACCD /* Pods_SimplePostsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2509C8F6DD7D5F1035C4DEF /* Pods_SimplePostsAppTests.framework */; };
+		66CDCBA22197541A00E72A43 /* SnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CDCBA12197541A00E72A43 /* SnapshotTestCase.swift */; };
 		8CB970E78EF77BD83B2D01C5 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB973A1C6986993D1108162 /* String+localized.swift */; };
 		8CB97985347C16A159D480A9 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB978DD0CB78FA73B162305 /* PostsListViewController.swift */; };
 		8CB97ED33120917B32499A20 /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB971A96FA281946F46CDB8 /* MainNavigator.swift */; };
@@ -49,6 +51,7 @@
 		0A74E4CA4A385A0DC72D4827 /* Pods-SimplePostsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePostsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePostsAppTests/Pods-SimplePostsAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		1F0FA3FB3CF638F0E377C826 /* XibBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibBased.swift; sourceTree = "<group>"; };
 		1F0FA4F20F5306217E3C1322 /* UIImage+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+UIColor.swift"; sourceTree = "<group>"; };
+		1F0FA55F2FC9526EEEB2A127 /* PostsListSnapshotTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListSnapshotTest.swift; sourceTree = "<group>"; };
 		1F0FA5FA6CB4B328C1AA4ABD /* PostsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListViewModel.swift; sourceTree = "<group>"; };
 		1F0FAA3DCB995A4314502DC3 /* TitleStylingStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleStylingStrategy.swift; sourceTree = "<group>"; };
 		1F0FAC8D78088C42BE31A196 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		1F0FAFA9ECA015BEC60BFCAD /* UIView+PinToEdges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PinToEdges.swift"; sourceTree = "<group>"; };
 		35D848CE7199D8D7643880C4 /* Pods_SimplePostsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplePostsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D90D4C9BC4AEB58702D7FB5 /* Pods-SimplePostsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePostsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp.release.xcconfig"; sourceTree = "<group>"; };
+		66CDCBA12197541A00E72A43 /* SnapshotTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTestCase.swift; sourceTree = "<group>"; };
 		8CB971A96FA281946F46CDB8 /* MainNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
 		8CB973A1C6986993D1108162 /* String+localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+localized.swift"; sourceTree = "<group>"; };
 		8CB978DD0CB78FA73B162305 /* PostsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				04603B8B219327E000453ADC /* Info.plist */,
+				1F0FA6882A1FAE22ADEA0BB7 /* Modules */,
+				66CDCBA12197541A00E72A43 /* SnapshotTestCase.swift */,
 			);
 			path = SimplePostsAppTests;
 			sourceTree = "<group>";
@@ -151,6 +157,22 @@
 				1F0FA3FB3CF638F0E377C826 /* XibBased.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		1F0FA6882A1FAE22ADEA0BB7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1F0FADA2A4D8F7DF391EA4E4 /* PostsList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1F0FADA2A4D8F7DF391EA4E4 /* PostsList */ = {
+			isa = PBXGroup;
+			children = (
+				1F0FA55F2FC9526EEEB2A127 /* PostsListSnapshotTest.swift */,
+			);
+			path = PostsList;
 			sourceTree = "<group>";
 		};
 		5A95FA09793502E41F16B161 /* Pods */ = {
@@ -370,6 +392,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -378,6 +401,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -432,6 +456,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0FAD60B120C0502C027677 /* PostsListSnapshotTest.swift in Sources */,
+				66CDCBA22197541A00E72A43 /* SnapshotTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,5 +15,6 @@ target 'SimplePostsApp' do
   target 'SimplePostsAppTests' do
     inherit! :search_paths
    	pod 'RxBlocking'
+   	pod 'iOSSnapshotTestCase'
   end
 end

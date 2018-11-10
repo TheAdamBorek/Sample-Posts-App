@@ -1,5 +1,10 @@
 PODS:
   - Differentiator (3.1.0)
+  - iOSSnapshotTestCase (4.0.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 4.0.0)
+  - iOSSnapshotTestCase/Core (4.0.0)
+  - iOSSnapshotTestCase/SwiftSupport (4.0.0):
+    - iOSSnapshotTestCase/Core
   - Kingfisher (4.10.1)
   - RxAtomic (4.4.0)
   - RxBlocking (4.4.0):
@@ -15,6 +20,7 @@ PODS:
     - RxAtomic (~> 4.4)
 
 DEPENDENCIES:
+  - iOSSnapshotTestCase
   - Kingfisher
   - RxBlocking
   - RxCocoa
@@ -24,6 +30,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Differentiator
+    - iOSSnapshotTestCase
     - Kingfisher
     - RxAtomic
     - RxBlocking
@@ -33,6 +40,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  iOSSnapshotTestCase: 711379b19f69a22c131527df862352c877c2773c
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxBlocking: 138ad53217434444d6eeeb4fb406a45431d92e31
@@ -40,6 +48,6 @@ SPEC CHECKSUMS:
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: 96e80f34a915e8f9e049bc6454e8e928abf8cfc6
+PODFILE CHECKSUM: f542b0bbf7c30bff2704152e047989850ba80d05
 
 COCOAPODS: 1.5.3
