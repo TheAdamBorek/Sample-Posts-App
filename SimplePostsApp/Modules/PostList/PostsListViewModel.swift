@@ -47,6 +47,6 @@ class DummyPostListCell: PostsListCellViewModelType {
     private(set) var readTime: String = "5 min"
     private(set) var authorName: String = "Adam Borek"
     lazy var authorAvatar: Driver<UIImage> = {
-        return Driver.just(UIImage.image(withColor: .lightGray))
+        return Driver.just(UIImage(named: "image_placeholder") ?? UIImage())
     }()
 }

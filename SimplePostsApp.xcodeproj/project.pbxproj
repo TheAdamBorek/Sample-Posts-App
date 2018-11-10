@@ -282,6 +282,7 @@
 					};
 					04603B84219327E000453ADC = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
 						TestTargetID = 04603B70219327DE00453ADC;
 					};
 				};
@@ -643,6 +644,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3HL3KR2BY;
 				INFOPLIST_FILE = SimplePostsAppTests/Info.plist;
@@ -653,6 +655,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamborek.SimplePostsAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimplePostsApp.app/SimplePostsApp";
@@ -665,6 +670,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3HL3KR2BY;
 				INFOPLIST_FILE = SimplePostsAppTests/Info.plist;
@@ -675,6 +681,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamborek.SimplePostsAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimplePostsApp.app/SimplePostsApp";

@@ -33,15 +33,6 @@ class SnapshotTestCase: FBSnapshotTestCase {
 
     private let frames: [ScreenSize] = [.iPhoneFive, .iPhoneEight, .iPhoneEightPlus, .iPhoneX]
 
-    override func getReferenceImageDirectory(withDefault dir: String?) -> String {
-        return "$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/ReferenceImages"
-    }
-
-    override func getImageDiffDirectory(withDefault dir: String?) -> String {
-        return "$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/FailureDiffs"
-    }
-
-
     func verifyForScreens(view: UIView, file: StaticString = #file, line: UInt = #line) {
         frames.forEach { device in
             verify(view: view, frame: device.bounds, identifier: device.rawValue, file: file, line: line)
