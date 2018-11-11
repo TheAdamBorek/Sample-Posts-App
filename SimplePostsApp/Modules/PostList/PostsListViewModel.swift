@@ -20,6 +20,7 @@ protocol PostsListViewModelType {
 protocol PostsListCellViewModelType {
     var title: String { get }
     var body: String { get }
+    var picture: Driver<UIImage> { get }
     var createdDate: String { get }
     var readTime: String { get }
     var authorName: String { get }
@@ -46,7 +47,11 @@ class DummyPostListCell: PostsListCellViewModelType {
     private(set) var createdDate: String = "10 November 2018"
     private(set) var readTime: String = "5 min"
     private(set) var authorName: String = "Adam Borek"
-    lazy var authorAvatar: Driver<UIImage> = {
+    lazy var picture: Driver<UIImage> = {
         return Driver.just(UIImage(named: "image_placeholder") ?? UIImage())
+    }()
+
+    lazy var authorAvatar: Driver<UIImage> = {
+        return Driver.just(UIImage(named: "author_placeholder") ?? UIImage())
     }()
 }

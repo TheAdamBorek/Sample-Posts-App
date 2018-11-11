@@ -33,8 +33,11 @@ final class PostsListCell: RxTableViewCell {
         createdDateLabel.text = viewModel.createdDate
         readingTimeLabel.text = viewModel.readTime
         viewModel.authorAvatar
-                .drive(pictureImageView.rx.image)
+                .drive(authorAvatarView.rx.image)
                 .disposed(by: disposeBag)
+        viewModel.picture
+            .drive(pictureImageView.rx.image)
+            .disposed(by: disposeBag)
     }
 }
 

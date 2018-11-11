@@ -7,6 +7,7 @@
 final class PostsListSnapshotTest: SnapshotTestCase {
     override func setUp() {
         super.setUp()
+        recordMode = true
     }
 
     func test_postsList() {
