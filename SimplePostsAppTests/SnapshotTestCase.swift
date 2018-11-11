@@ -39,14 +39,8 @@ class SnapshotTestCase: FBSnapshotTestCase {
         }
     }
 
-    func verifyForScreens(view: UIView, updateClosure: (CGRect) -> Void, file: StaticString = #file, line: UInt = #line) {
-        frames.forEach { device in
-            updateClosure(device.bounds)
-            verify(view: view, frame: device.bounds, identifier: device.rawValue, file: file, line: line)
-        }
-    }
 
-    func verify(view: UIView, frame: CGRect, identifier: String, file: StaticString = #file, line: UInt = #line) {
+    func verify(view: UIView, frame: CGRect, identifier: String = "", file: StaticString = #file, line: UInt = #line) {
         view.frame = frame
         view.layoutIfNeeded()
         FBSnapshotVerifyView(view, identifier: identifier, file: file, line: line)

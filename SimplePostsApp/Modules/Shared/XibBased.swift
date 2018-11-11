@@ -15,3 +15,13 @@ extension XibBased {
         return UINib(nibName: xibFileName, bundle: Bundle.main)
     }
 }
+
+extension XibBased where Self: UIView {
+    static func fromXib(translatesAutoresizingMaskIntoConstraints: Bool = true) -> Self {
+        guard let view = Self.xib.instantiate(withOwner: nil, options: nil).first as? Self else {
+            fatalError("Cannot read from xib file")
+        }
+        view.translatesAutoresizingMaskIntoConstraints = translatesAutoresizingMaskIntoConstraints
+        return view
+    }
+}
