@@ -18,6 +18,7 @@
 		1F0FA4E2D64A6306516BA321 /* BackgroundSyncUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAC01C13CCF2B70F327C2 /* BackgroundSyncUseCase.swift */; };
 		1F0FA5FCE8B80D129C66C3C4 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA8782A2060EC2CBC218D /* ParameterEncoder.swift */; };
 		1F0FA6265DBE70ACBA01FE9B /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA828A8F00F4A7A52BDD1 /* APIClientTests.swift */; };
+		1F0FA63EBFA445F8EF1D28DE /* APIClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAF455E23DC2CE3AB296A /* APIClientMock.swift */; };
 		1F0FA70953D155F6D92E15B4 /* XibBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA3FB3CF638F0E377C826 /* XibBased.swift */; };
 		1F0FA989270AC23BB2668C95 /* URLRequestComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA811DB3BD8419A19A11B /* URLRequestComponents.swift */; };
 		1F0FA9DFB23DF71AF4ED9F17 /* UnitTestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA8496040DFA07490CC2E /* UnitTestsAppDelegate.swift */; };
@@ -74,6 +75,7 @@
 		1F0FAC01C13CCF2B70F327C2 /* BackgroundSyncUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundSyncUseCase.swift; sourceTree = "<group>"; };
 		1F0FAC8D78088C42BE31A196 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		1F0FAE9D21C58E360A5E1A9D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1F0FAF455E23DC2CE3AB296A /* APIClientMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientMock.swift; sourceTree = "<group>"; };
 		1F0FAFA9ECA015BEC60BFCAD /* UIView+PinToEdges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PinToEdges.swift"; sourceTree = "<group>"; };
 		35D848CE7199D8D7643880C4 /* Pods_SimplePostsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplePostsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D90D4C9BC4AEB58702D7FB5 /* Pods-SimplePostsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePostsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				1F0FA6882A1FAE22ADEA0BB7 /* Modules */,
 				66CDCBA12197541A00E72A43 /* SnapshotTestCase.swift */,
 				1F0FA8496040DFA07490CC2E /* UnitTestsAppDelegate.swift */,
+				1F0FA64B00F6D5FFF291D627 /* Mocks */,
 			);
 			path = SimplePostsAppTests;
 			sourceTree = "<group>";
@@ -190,6 +193,14 @@
 				66CDCBAD2198623A00E72A43 /* AnyError.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		1F0FA64B00F6D5FFF291D627 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				1F0FAF455E23DC2CE3AB296A /* APIClientMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		1F0FA6882A1FAE22ADEA0BB7 /* Modules */ = {
@@ -543,6 +554,7 @@
 				1F0FA6265DBE70ACBA01FE9B /* APIClientTests.swift in Sources */,
 				1F0FA9E86300D1030D27E995 /* BackgroundSyncUseCaseTests.swift in Sources */,
 				1F0FA9DFB23DF71AF4ED9F17 /* UnitTestsAppDelegate.swift in Sources */,
+				1F0FA63EBFA445F8EF1D28DE /* APIClientMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,8 +5,14 @@
 
 import Foundation
 
-final class BackgrounSyncUseCase {
+final class BackgroundSyncUseCase {
+    private let apiClient: APIClientType
+    init(apiClient: APIClientType) {
+        self.apiClient = apiClient
+    }
+
     func start() {
-        
+        _ = apiClient.invoke(GetUsersRequest())
+            .subscribe()
     }
 }

@@ -14,10 +14,10 @@ enum APIClientError: Error {
     case invalidURL(path: String)
     case encodingRequestError
 }
-typealias Response = (HTTPURLResponse, Data)
+typealias APIResponse = (HTTPURLResponse, Data)
 
 protocol APIClientType {
-    func invoke(_ components: URLRequestComponents) -> Single<Response>
+    func invoke(_ components: URLRequestComponents) -> Single<APIResponse>
 }
 
 // I've decided to not use any 3rd party library for API connection. Mostly for 2 reasons:
@@ -37,15 +37,15 @@ struct APIClient: APIClientType {
         self.session = URLSession(configuration: sessionConfiguration)
     }
 
-    func invoke(_ components: URLRequestComponents) -> Single<Response> {
+    func invoke(_ components: URLRequestComponents) -> Single<APIResponse> {
         return Single.deferred {
             let urlRequest = try self.createUrlRequest(from: components)
             return self.send(urlRequest)
         }
     }
 
-    private func send(_ urlRequest: URLRequest) -> Single<Response> {
-        return Single<Response>.create { observer in
+    private func send(_ urlRequest: URLRequest) -> Single<APIResponse> {
+        return Single<APIResponse>.create { observer in
             let completionHandler = self.handleResponse(notify: observer)
             let task = self.session.dataTask(with: urlRequest, completionHandler: completionHandler)
             task.resume()
@@ -56,7 +56,7 @@ struct APIClient: APIClientType {
     }
 
     typealias URLSessionCompletionHandler = (Data?, URLResponse?, Error?) -> Void
-    private func handleResponse(notify observer: @escaping ((SingleEvent<Response>) -> Void)) -> URLSessionCompletionHandler {
+    private func handleResponse(notify observer: @escaping ((SingleEvent<APIResponse>) -> Void)) -> URLSessionCompletionHandler {
         func handleResponse(data: Data?, response: URLResponse?, error: Error?) {
             if let error = error { return observer(.error(error)) }
             guard let httpResponse = response as? HTTPURLResponse else {

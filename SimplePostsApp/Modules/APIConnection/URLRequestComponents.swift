@@ -12,6 +12,12 @@ protocol URLRequestComponents {
     var encoding: ParameterEncoder { get }
 }
 
+extension URLRequestComponents {
+    var parameters: [String: Any]? { return nil }
+    var headers: [String: String]? { return nil }
+    var encoding: ParameterEncoder { return JSONEncoding() }
+}
+
 public enum HTTPMethod: String {
     case get
     case head
@@ -23,4 +29,9 @@ public enum HTTPMethod: String {
 public enum ParameterEncoding {
     case url
     case json
+}
+
+struct GetUsersRequest: URLRequestComponents {
+    let method: HTTPMethod = .get
+    let path = "users"
 }
