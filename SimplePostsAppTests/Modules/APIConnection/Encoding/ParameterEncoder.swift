@@ -5,6 +5,9 @@
 
 import Foundation
 
+
+// An example of Open-close principle. Right now the app supports JSON & URL Encoding.
+// When requirments change we can add new endocder without a need to modify already used encoders.
 protocol ParameterEncoder {
     func encode(components: URLRequestComponents, in request: URLRequest) throws -> URLRequest
 }
