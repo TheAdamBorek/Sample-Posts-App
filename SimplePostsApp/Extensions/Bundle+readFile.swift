@@ -4,7 +4,6 @@
 //
 
 import Foundation
-@testable import SimplePostsApp
 
 extension Bundle {
     func read(contentOfFile file: String, ofType type: String) throws -> Data {

@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38fdad5b-636e-4dd9-835c-cfac539a6447" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListCell.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListCell.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListCell.xib" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListCell.xib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Configuration.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Configuration.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Initializing/BackgroundSyncInitializer.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsApp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsApp/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/AppDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsAppTests/Extensions/Bundle+readFile.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Extensions/Bundle+readFile.swift" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,11 +55,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="480">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SimplePostsApp/Configuration.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimplePostsApp/Extensions/Bundle+readFile.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Foundation/Foundation.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="5673" column="11" selection-start-line="5673" selection-start-column="11" selection-end-line="5673" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -87,33 +117,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="483">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Mocks/SystemNotificationStub.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pods/RxSwift/RxSwift/Subjects/PublishSubject.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Background Sync/BackgroundSyncUseCase.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -187,6 +190,8 @@
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Database/UsersStorage.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Entities/Comment.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsApp/Extensions/Bundle+readFile.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsApp/Configuration.swift" />
       </list>
     </option>
   </component>
@@ -251,12 +256,6 @@
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
               <item name="SimplePostsAppTests" type="fcab9f18:XcodeViewNode" />
-              <item name="Extensions" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
-              <item name="SimplePostsAppTests" type="fcab9f18:XcodeViewNode" />
               <item name="Mocks" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
@@ -286,7 +285,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="SimplePostsAppTests" />
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="SimplePostsApp" />
     <property name="com.jetbrains.cidr.execution.build.XcodeMessageFilterConfiguration.GENERIC" value="false" />
     <property name="com.jetbrains.cidr.execution.build.XcodeMessageFilterConfiguration.INFO" value="false" />
     <property name="com.jetbrains.cidr.execution.build.XcodeMessageFilterConfiguration.NOTE" value="false" />
@@ -409,10 +408,10 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Messages" order="4" sideWeight="0.49946752" visible="true" weight="0.25292864" />
+      <window_info active="true" id="Messages" order="4" sideWeight="0.49946752" visible="true" weight="0.25292864" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946752" weight="0.48114902" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.28186715" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.28186715" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -454,13 +453,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Pods/RxCocoa/RxCocoa/Common/SectionedViewDataSourceType.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/UIKit.UITableView/UIKit.UITableView.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="915">
@@ -622,27 +614,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Extensions/Bundle+readFile.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#102#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Foundation.NSBundle/Foundation.NSBundle.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Foundation/Foundation.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="3864" column="24" lean-forward="true" selection-start-line="3864" selection-start-column="24" selection-end-line="3864" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -860,8 +835,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="480">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Foundation/Foundation.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="5673" column="11" selection-start-line="5673" selection-start-column="11" selection-end-line="5673" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Extensions/Bundle+readFile.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Configuration.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
