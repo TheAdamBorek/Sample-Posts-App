@@ -27,6 +27,6 @@ final class BackgroundSyncUseCaseTests: XCTestCase {
 
     func test_savesUsersInDataBase() {
         backgroundSync.start()
-
+        
     }
 }

@@ -20,6 +20,7 @@
 		1F0FA6265DBE70ACBA01FE9B /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA828A8F00F4A7A52BDD1 /* APIClientTests.swift */; };
 		1F0FA63EBFA445F8EF1D28DE /* APIClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAF455E23DC2CE3AB296A /* APIClientMock.swift */; };
 		1F0FA70953D155F6D92E15B4 /* XibBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA3FB3CF638F0E377C826 /* XibBased.swift */; };
+		1F0FA954FCCCEF4F774DF895 /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA1DD94A87B1C9B5F84FC /* UserObject.swift */; };
 		1F0FA989270AC23BB2668C95 /* URLRequestComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA811DB3BD8419A19A11B /* URLRequestComponents.swift */; };
 		1F0FA9DFB23DF71AF4ED9F17 /* UnitTestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA8496040DFA07490CC2E /* UnitTestsAppDelegate.swift */; };
 		1F0FA9E86300D1030D27E995 /* BackgroundSyncUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA170CE6467F334AB4911 /* BackgroundSyncUseCaseTests.swift */; };
@@ -62,6 +63,7 @@
 		04603B8B219327E000453ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A74E4CA4A385A0DC72D4827 /* Pods-SimplePostsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePostsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePostsAppTests/Pods-SimplePostsAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		1F0FA170CE6467F334AB4911 /* BackgroundSyncUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundSyncUseCaseTests.swift; sourceTree = "<group>"; };
+		1F0FA1DD94A87B1C9B5F84FC /* UserObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
 		1F0FA3FB3CF638F0E377C826 /* XibBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibBased.swift; sourceTree = "<group>"; };
 		1F0FA4F20F5306217E3C1322 /* UIImage+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+UIColor.swift"; sourceTree = "<group>"; };
 		1F0FA55F2FC9526EEEB2A127 /* PostsListSnapshotTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListSnapshotTest.swift; sourceTree = "<group>"; };
@@ -232,6 +234,14 @@
 			path = APIConnection;
 			sourceTree = "<group>";
 		};
+		1F0FAD1A935D10FC10DA14CE /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				1F0FA1DD94A87B1C9B5F84FC /* UserObject.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		1F0FADA2A4D8F7DF391EA4E4 /* PostsList */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +286,7 @@
 				1F0FA2CBE00FC03DFF289E20 /* Shared */,
 				1F0FA08D95DC3C5632A76C7B /* Background Sync */,
 				1F0FA87A48D1CA58265AA75E /* APIConnection */,
+				1F0FAD1A935D10FC10DA14CE /* Database */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -444,6 +455,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
@@ -455,6 +468,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
@@ -540,6 +555,7 @@
 				1F0FA5FCE8B80D129C66C3C4 /* ParameterEncoder.swift in Sources */,
 				1F0FA989270AC23BB2668C95 /* URLRequestComponents.swift in Sources */,
 				1F0FADB9246B5AE02E043765 /* main.swift in Sources */,
+				1F0FA954FCCCEF4F774DF895 /* UserObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

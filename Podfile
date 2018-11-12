@@ -11,6 +11,7 @@ target 'SimplePostsApp' do
   use_frameworks!
   rxswift
   pod 'Kingfisher'
+  pod 'RealmSwift'
   
   target 'SimplePostsAppTests' do
     inherit! :search_paths
