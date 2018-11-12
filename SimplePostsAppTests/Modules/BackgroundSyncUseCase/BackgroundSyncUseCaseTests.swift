@@ -12,11 +12,13 @@ import RxSwift
 final class BackgroundSyncUseCaseTests: XCTestCase {
     var backgroundSync: BackgroundSyncUseCase!
     var apiClient: APIClientMock!
+    var userStorage: UserStorageSpy!
 
     override func setUp() {
         super.setUp()
         apiClient = APIClientMock()
-        backgroundSync = BackgroundSyncUseCase(apiClient: apiClient)
+        userStorage = UserStorageSpy()
+        backgroundSync = BackgroundSyncUseCase(apiClient: apiClient, userStorage: userStorage)
     }
 
     func test_invokeRequestToUsersEndpoint() {
@@ -25,8 +27,9 @@ final class BackgroundSyncUseCaseTests: XCTestCase {
         apiClient.verify(didCall: usersRequest)
     }
 
-    func test_savesUsersInDataBase() {
+    func test_savesUsersInDatabase() throws {
+        try apiClient.mock(contentOfFile: "users_sample", ofType: "json", asResponseFor: GetUsersRequest())
         backgroundSync.start()
-        
+        XCTAssertEqual(userStorage.users.count, 3)
     }
 }

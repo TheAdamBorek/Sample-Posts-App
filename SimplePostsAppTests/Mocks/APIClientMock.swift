@@ -62,6 +62,19 @@ final class APIClientMock: APIClientType {
         mockedResponses[wrapper] = response
     }
 
+    func mock(contentOfFile file: String, ofType type: String, asResponseFor request: URLRequestComponents) throws {
+        guard let data = read(contentOfFile: file, ofType: type) else {
+            throw AnyError(debugMessage: "Cannot find \(file).\(type) in test bundle")
+        }
+        mock(response: .success(data: data), for: request)
+    }
+
+    private func read(contentOfFile file: String, ofType type: String) -> Data? {
+        let bundle = Bundle(for: APIClientMock.self)
+        return bundle.path(forResource: file, ofType: type)
+                  .flatMap { FileManager.default.contents(atPath: $0) }
+    }
+
     func removeMockedResponse(for request: URLRequestComponents) {
         let wrapper = EquatableWrapper(request: request)
         mockedResponses.removeValue(forKey: wrapper)

@@ -4,15 +4,24 @@
 //
 
 import Foundation
+import RxSwift
 
 final class BackgroundSyncUseCase {
     private let apiClient: APIClientType
-    init(apiClient: APIClientType) {
+    private let userStorage: UserStorage
+
+    init(apiClient: APIClientType, userStorage: UserStorage) {
         self.apiClient = apiClient
+        self.userStorage = userStorage
     }
 
     func start() {
         _ = apiClient.invoke(GetUsersRequest())
+            .do(onSuccess: saveUsers)
             .subscribe()
+    }
+
+    private func saveUsers(_ users: [User]) throws {
+        try userStorage.save(users)
     }
 }
