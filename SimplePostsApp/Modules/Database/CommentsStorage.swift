@@ -17,7 +17,7 @@ protocol CommentsStorage {
 final class RealmCommentsStorage: CommentsStorage {
     private let realmConfig: Realm.Configuration
     private let genericRealm: GenericRealm
-    init(realmConfig: Realm.Configuration) {
+    init(realmConfig: Realm.Configuration = .defaultConfiguration) {
         self.realmConfig = realmConfig
         self.genericRealm = GenericRealm(configuration: realmConfig)
     }

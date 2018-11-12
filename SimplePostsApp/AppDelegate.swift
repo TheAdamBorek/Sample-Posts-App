@@ -13,6 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let mainNavigator = MainNavigator(window: window)
+        let apiClient = APIClient(hostURL: URL(string: "http://jsonplaceholder.typicode.com")!)
+        let storage = Storage(users: RealmUsersStorage(), posts: RealmPostsStorage(), comments: RealmCommentsStorage())
+        let backgroundSync = BackgroundSyncUseCase(notifications: SystemNotifications(), apiClient: apiClient, storage: storage)
+        backgroundSync.start()
         mainNavigator.navigateToFirstScene()
         return true
     }

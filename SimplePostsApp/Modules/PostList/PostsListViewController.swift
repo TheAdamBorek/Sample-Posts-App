@@ -30,7 +30,7 @@ final class PostsListViewController: BaseViewController {
     private let viewModel: PostsListViewModelType
     private let disposeBag = DisposeBag()
 
-    init(viewModel: PostsListViewModelType = PostsListViewModel()) {
+    init(viewModel: PostsListViewModelType) {
         self.viewModel = viewModel
         super.init()
     }

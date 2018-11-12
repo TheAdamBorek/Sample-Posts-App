@@ -8,6 +8,7 @@
 
 import Foundation
 import RealmSwift
+import RxSwift
 
 struct RelationshipError: Error {
     let message: String
@@ -16,6 +17,8 @@ struct RelationshipError: Error {
 protocol PostsStorage {
     func post(with id: Int) throws -> Post
     func allPosts() throws -> [Post]
+    func postsUpdates() -> Observable<[Post]>
+
     func save(_ post: Post) throws
     func save(_ posts: [Post]) throws
 }
@@ -23,7 +26,7 @@ protocol PostsStorage {
 final class RealmPostsStorage: PostsStorage {
     private let realmConfig: Realm.Configuration
     private let genericRealm: GenericRealm
-    init(realmConfig: Realm.Configuration) {
+    init(realmConfig: Realm.Configuration = .defaultConfiguration) {
         self.realmConfig = realmConfig
         self.genericRealm = GenericRealm(configuration: realmConfig)
     }
@@ -34,6 +37,10 @@ final class RealmPostsStorage: PostsStorage {
 
     func allPosts() throws -> [Post] {
         return try genericRealm.findAll()
+    }
+
+    func postsUpdates() -> Observable<[Post]> {
+        return genericRealm.observeObjects()
     }
 
     func save(_ post: Post) throws {

@@ -16,7 +16,7 @@ protocol UsersStorage {
 
 final class RealmUsersStorage: UsersStorage {
     private let realm: GenericRealm
-    init(realmConfig: Realm.Configuration) {
+    init(realmConfig: Realm.Configuration = .defaultConfiguration) {
         self.realm = GenericRealm(configuration: realmConfig)
     }
 

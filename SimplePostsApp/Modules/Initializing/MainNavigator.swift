@@ -14,7 +14,9 @@ import UIKit
     }
 
     func navigateToFirstScene() {
-        let postListViewController = PostsListViewController()
+        let useCase = GetPostsListUseCase(postStorage: RealmPostsStorage())
+        let viewModel = PostsListViewModel(postListUseCase: useCase)
+        let postListViewController = PostsListViewController(viewModel: viewModel)
         let navigationController = UINavigationController(rootViewController: postListViewController)
         window.rootViewController = navigationController
         window.makeKeyAndVisible()

@@ -4,6 +4,8 @@
 //
 
 import Foundation
+import RxSwift
+
 class Storage {
     private let users: UsersStorage
     private let posts: PostsStorage
@@ -38,6 +40,10 @@ extension Storage: UsersStorage {
 extension Storage: PostsStorage {
     func post(with id: Int) throws -> Post {
         return try post(with: id)
+    }
+
+    func postsUpdates() -> Observable<[Post]> {
+        return posts.postsUpdates()
     }
 
     func allPosts() throws -> [Post] {

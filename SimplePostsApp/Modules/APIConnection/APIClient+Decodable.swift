@@ -10,7 +10,6 @@ extension APIClientType {
     func invoke<T: Decodable>(_ components: URLRequestComponents) -> Single<T> {
         return self.invoke(components)
             .map(parse)
-            .debug("error")
     }
 
     private func parse<T: Decodable>(_ response: APIResponse) throws -> T {

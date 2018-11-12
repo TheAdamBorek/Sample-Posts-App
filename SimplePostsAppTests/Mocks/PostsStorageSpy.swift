@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import RxSwift
+
 @testable import SimplePostsApp
 
 final class PostsStorageSpy: PostsStorage {
@@ -16,6 +18,10 @@ final class PostsStorageSpy: PostsStorage {
     func post(with id: Int) throws -> Post {
         let post = posts.first(where: { $0.id == id })
         return post!
+    }
+
+    func postsUpdates() -> Observable<[Post]> {
+        return .just(posts)
     }
 
     func allPosts() throws -> [Post] {

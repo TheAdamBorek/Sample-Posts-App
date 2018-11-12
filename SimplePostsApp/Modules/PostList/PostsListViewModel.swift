@@ -28,6 +28,14 @@ protocol PostsListCellViewModelType {
 }
 
 final class PostsListViewModel: PostsListViewModelType {
+    let posts: Driver<[PostsListCellViewModelType]>
+
+    init(postListUseCase: GetPostsListUseCase) {
+        self.posts = postListUseCase.posts()
+            .mapMany(PostsListCellViewModel.init)
+            .asDriver(onErrorJustReturn: [])
+    }
+
     private let _posts = [
         DummyPostListCell(),
         DummyPostListCell(),
@@ -35,10 +43,33 @@ final class PostsListViewModel: PostsListViewModelType {
         DummyPostListCell(),
         DummyPostListCell()
     ]
+}
 
-    var posts: Driver<[PostsListCellViewModelType]> {
-        return Driver.just(_posts)
+class PostsListCellViewModel: PostsListCellViewModelType {
+    private let post: Post
+    init(post: Post) {
+        self.post = post
     }
+
+    var title: String {
+        return post.title
+    }
+
+    var body: String {
+        return post.body
+    }
+
+    private(set) var createdDate: String = "10 November 2018"
+    private(set) var readTime: String = "5 min"
+    private(set) var authorName: String = "Adam Borek"
+    lazy var picture: Driver<UIImage> = {
+        return Driver.just(UIImage(named: "image_placeholder") ?? UIImage())
+    }()
+
+    lazy var authorAvatar: Driver<UIImage> = {
+        return Driver.just(UIImage(named: "author_placeholder") ?? UIImage())
+    }()
+
 }
 
 class DummyPostListCell: PostsListCellViewModelType {

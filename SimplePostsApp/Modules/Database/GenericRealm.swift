@@ -8,6 +8,7 @@
 
 import Foundation
 import RealmSwift
+import RxSwift
 
 struct TransactionNotInitializedRealmError: Error { }
 struct EntityNotFound: Error {
@@ -39,6 +40,37 @@ public final class GenericRealm {
             return try realm()
                 .objects(T.RealmType.self)
                 .asDomain()
+    }
+
+    func observeObjects<T>() -> Observable<[T]>
+        where T: RealmConvertible, T.RealmType: DomainConvertible, T.RealmType.DomainType == T {
+            return Observable<[T]>.create { observer in
+                do {
+                    let token = try self.realm()
+                        .objects(T.RealmType.self)
+                        .observe { notification in
+                            self.sendUpdates(from: notification, into: observer)
+                        }
+                    return Disposables.create {
+                        token.invalidate()
+                    }
+                } catch let error {
+                    observer.onError(error)
+                    return Disposables.create()
+                }
+            }
+    }
+
+    private func sendUpdates<T>(from notification: RealmCollectionChange<Results<T.RealmType>>, into observer: AnyObserver<[T]>)
+        where T: RealmConvertible, T.RealmType: DomainConvertible, T.RealmType.DomainType == T {
+            switch notification {
+            case .initial(let results):
+                observer.onNext(results.asDomain())
+            case .update(let latest, _, _, _):
+                observer.onNext(latest.asDomain())
+            case .error(let error):
+                observer.onError(error)
+            }
     }
 
     func save<T>(_ object: T) throws where T: RealmConvertible {
