@@ -12,7 +12,7 @@ final class UserTests: XCTestCase {
         let data = try Bundle.read(contentOfFile: "users_sample", ofType: "json", inBundleForClass: UserTests.self)
         let users: [User] = try JSONDecoder().decode(from: data)
         let user = users[0]
-        XCTAssertEqual(user.id, "1")
+        XCTAssertEqual(user.id, 1)
         XCTAssertEqual(user.name, "Leanne Graham")
         XCTAssertEqual(user.username, "Bret")
         XCTAssertEqual(user.email, "Sincere@april.biz")

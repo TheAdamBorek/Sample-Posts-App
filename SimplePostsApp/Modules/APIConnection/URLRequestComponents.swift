@@ -35,3 +35,13 @@ struct GetUsersRequest: URLRequestComponents {
     let method: HTTPMethod = .get
     let path = "users"
 }
+
+struct GetPostsRequest: URLRequestComponents {
+    let method: HTTPMethod = .get
+    let path = "posts"
+}
+
+struct GetCommentsRequst: URLRequestComponents {
+    let method: HTTPMethod = .get
+    let path = "comments"
+}

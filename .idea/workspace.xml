@@ -2,13 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38fdad5b-636e-4dd9-835c-cfac539a6447" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Extensions/Codable+handyHelpers.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimplePostsAppTests/Extensions/Bundle+readFile.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimplePostsAppTests/Modules/Entities/UsersTests.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Extensions/Rx+mapTo.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Database/PostsStorage.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Database/RealmConvertible.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Database/StorageFacade.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Entities/Post.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsAppTests/Mocks/PostsStorageSpy.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsAppTests/Mocks/StorageFake.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsAppTests/Mocks/SystemNotificationStub.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/posts_sample.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimplePostsApp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/APIClient+Decodable.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/APIClient+Decodable.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimplePostsAppTests/Mocks/APIClientMock.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsAppTests/Mocks/APIClientMock.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/URLRequestComponents.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/URLRequestComponents.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/Background Sync/BackgroundSyncUseCase.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Background Sync/BackgroundSyncUseCase.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/Database/UserObject.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/Database/UsersStorage.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Database/UsersStorage.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/Entities/User.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Entities/User.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsAppTests/Mocks/UserStorageSpy.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsAppTests/Mocks/UsersStorageSpy.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/BackgroundSyncUseCaseTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/BackgroundSyncUseCaseTests.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsAppTests/Modules/Entities/UsersTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsAppTests/Modules/Entities/UsersTests.swift" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,50 +31,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_0728123C-EFB5-4A0C-852A-6BDFF91E891F" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/APIClient.swift">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/BackgroundSyncUseCaseTests.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="61" column="57" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
-              <folding>
-                <element signature="e#144#161#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Foundation.NSURLResponse/Foundation.NSURLResponse.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-184">
-              <caret line="108" column="11" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/users_sample.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="31" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Mocks/APIClientMock.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="66" column="69" selection-start-line="66" selection-start-column="69" selection-end-line="66" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Modules/Entities/UsersTests.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            <state relative-caret-position="1725">
+              <caret line="75" column="61" lean-forward="true" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
               <folding>
                 <element signature="e#102#119#0" expanded="true" />
               </folding>
@@ -71,51 +44,90 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimplePostsApp/Extensions/Codable+handyHelpers.swift">
+        <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Mocks/SystemNotificationStub.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="460">
+              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Extensions/Bundle+readFile.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-              <folding>
-                <element signature="e#102#119#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Foundation.NSBundle/Foundation.NSBundle.swift">
+        <entry file="file://$PROJECT_DIR$/Pods/RxSwift/RxSwift/Subjects/PublishSubject.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="258">
-              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Foundation/Foundation.swift">
+        <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Mocks/StorageFake.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="3860" column="88" lean-forward="true" selection-start-line="3860" selection-start-column="9" selection-end-line="3860" selection-end-column="88" />
+            <state relative-caret-position="161">
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="40" />
+              <folding>
+                <element signature="e#102#119#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/APIClient+Decodable.swift">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/StorageFacade.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+            <state relative-caret-position="138">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Mocks/PostsStorageSpy.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/UsersStorage.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#102#119#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/RealmConvertible.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Background Sync/BackgroundSyncUseCase.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/PostsStorage.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+              <folding>
+                <element signature="e#147#164#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,27 +167,38 @@
         <option value="$PROJECT_DIR$/SimplePostsAppTests/Modules/PostsList/PostsListSnapshotTest.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListCell.swift" />
-        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Background Sync/BackgroundSyncUseCase.swift" />
         <option value="$PROJECT_DIR$/SimplePostsAppTests/Modules/APIConnection/APIClientTests.swift" />
         <option value="$PROJECT_DIR$/SimplePostsAppTests/Modules/APIConnection/Encoding/ParameterEncoder.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/APIClient.swift" />
         <option value="$PROJECT_DIR$/SimplePostsAppTests/UnitTestsAppDelegate.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/AppDelegate.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/main.swift" />
-        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/URLRequestComponents.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Database/UserObject.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Database/RealmConfiguration.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Database/UsersPersitence.swift" />
-        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Database/UsersStorage.swift" />
         <option value="$PROJECT_DIR$/SimplePostsAppTests/Mocks/UserStorageSpy.swift" />
-        <option value="$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/BackgroundSyncUseCaseTests.swift" />
         <option value="$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/users_sample.json" />
-        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Entities/User.swift" />
         <option value="$PROJECT_DIR$/SimplePostsAppTests/Mocks/APIClientMock.swift" />
         <option value="$PROJECT_DIR$/SimplePostsAppTests/Extensions/Bundle+readFile.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Extensions/Codable+handyHelpers.swift" />
-        <option value="$PROJECT_DIR$/SimplePostsAppTests/Modules/Entities/UsersTests.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/APIClient+Decodable.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/URLRequestComponents.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsAppTests/Mocks/UsersStorageSpy.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/posts_sample.json" />
+        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Entities/Post.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Entities/User.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsAppTests/Modules/Entities/UsersTests.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Database/UserRelationshipValidationDecorator.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Database/PostsValidationDecorator.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Database/RealmConvertible.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Database/PostsStorage.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Database/UsersStorage.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Database/StorageFacade.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsAppTests/Mocks/StorageFake.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsAppTests/Mocks/PostsStorageSpy.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsAppTests/Mocks/SystemNotificationStub.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Background Sync/BackgroundSyncUseCase.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/BackgroundSyncUseCaseTests.swift" />
       </list>
     </option>
   </component>
@@ -191,6 +214,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,6 +250,13 @@
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
+              <item name="SimplePostsApp" type="fcab9f18:XcodeViewNode" />
+              <item name="Modules" type="fcab9f18:XcodeViewNode" />
+              <item name="Database" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
               <item name="SimplePostsAppTests" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
@@ -232,6 +264,12 @@
               <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
               <item name="SimplePostsAppTests" type="fcab9f18:XcodeViewNode" />
               <item name="Extensions" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
+              <item name="SimplePostsAppTests" type="fcab9f18:XcodeViewNode" />
+              <item name="Mocks" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
@@ -250,12 +288,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Cidr.FilesView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="SimplePostsApp" />
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="SimplePostsAppTests" />
     <property name="com.jetbrains.cidr.execution.build.XcodeMessageFilterConfiguration.GENERIC" value="false" />
     <property name="com.jetbrains.cidr.execution.build.XcodeMessageFilterConfiguration.INFO" value="false" />
     <property name="com.jetbrains.cidr.execution.build.XcodeMessageFilterConfiguration.NOTE" value="false" />
@@ -276,7 +312,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="XCTest.UserTests">
+  <component name="RunManager" selected="XCTest.BackgroundSyncUseCaseTests">
     <configuration name="SimplePostsApp" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SimplePostsApp" TARGET_NAME="SimplePostsApp" CONFIG_NAME="Debug" SCHEME_NAME="SimplePostsApp" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="SimplePostsApp" RUN_TARGET_NAME="SimplePostsApp" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
@@ -304,6 +340,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BackgroundSyncUseCaseTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SimplePostsApp" TARGET_NAME="SimplePostsAppTests" CONFIG_NAME="Debug" SCHEME_NAME="BackgroundSyncUseCaseTests" IS_LOCATION_SIMULATION_ALLOWED="true" TEST_CLASS="BackgroundSyncUseCaseTests" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SimplePostsApp" TARGET_NAME="SimplePostsAppTests" CONFIG_NAME="Debug" SCHEME_NAME="UserTests" IS_LOCATION_SIMULATION_ALLOWED="true" TEST_CLASS="UserTests" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -315,9 +356,11 @@
       <item itemvalue="XCTest.APIClientTests" />
       <item itemvalue="XCTest.APIClientTests.testInvokeGetRequest" />
       <item itemvalue="XCTest.UserTests" />
+      <item itemvalue="XCTest.BackgroundSyncUseCaseTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="XCTest.BackgroundSyncUseCaseTests" />
         <item itemvalue="XCTest.UserTests" />
         <item itemvalue="XCTest.APIClientTests.testInvokeGetRequest" />
         <item itemvalue="XCTest.APIClientTests" />
@@ -325,9 +368,6 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="All_tests - 2018.11.11 at 12h 09m 28s.xml">
-      <configuration name="All tests" configurationId="OCUnitRunConfiguration" />
-    </history-entry>
     <history-entry file="APIClientTests - 2018.11.11 at 13h 11m 02s.xml">
       <configuration name="APIClientTests" configurationId="OCUnitRunConfiguration" />
     </history-entry>
@@ -340,16 +380,34 @@
     <history-entry file="UserTests - 2018.11.12 at 15h 33m 27s.xml">
       <configuration name="UserTests" configurationId="OCUnitRunConfiguration" />
     </history-entry>
+    <history-entry file="UserTests - 2018.11.12 at 15h 33m 50s.xml">
+      <configuration name="UserTests" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="BackgroundSyncUseCaseTests - 2018.11.12 at 18h 18m 31s.xml">
+      <configuration name="BackgroundSyncUseCaseTests" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="BackgroundSyncUseCaseTests - 2018.11.12 at 18h 22m 57s.xml">
+      <configuration name="BackgroundSyncUseCaseTests" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="BackgroundSyncUseCaseTests - 2018.11.12 at 18h 26m 08s.xml">
+      <configuration name="BackgroundSyncUseCaseTests" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="BackgroundSyncUseCaseTests - 2018.11.12 at 18h 28m 17s.xml">
+      <configuration name="BackgroundSyncUseCaseTests" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="BackgroundSyncUseCaseTests - 2018.11.12 at 18h 30m 17s.xml">
+      <configuration name="BackgroundSyncUseCaseTests" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1566" height="1200" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25131235" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25079873" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Messages" order="4" sideWeight="0.49946752" weight="0.25328085" />
+      <window_info active="true" id="Messages" order="4" sideWeight="0.49946752" visible="true" weight="0.25292864" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946752" weight="0.48114902" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.28186715" />
@@ -394,31 +452,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Initializing.swift" />
-    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Initializing/MainNavigator.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="e#102#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/9F2000/4.1.2/arm64/iphoneos11.4/ObjectiveC.NSObject/ObjectiveC.NSObject.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/UIKit.UIViewController/UIKit.UIViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="300" column="11" selection-start-line="300" selection-start-column="11" selection-end-line="300" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pods/RxDataSources/Sources/RxDataSources/TableViewSectionedDataSource.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -583,47 +616,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Background Sync/BackgroundSyncUseCase.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/RealmConfiguration.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-          <folding>
-            <element signature="e#102#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/URLRequestComponents.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/UserObject.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-          <folding>
-            <element signature="e#102#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/UsersStorage.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/RealmConfiguration.swift" />
     <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="667">
@@ -638,19 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="e#102#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/BackgroundSyncUseCaseTests.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding>
-            <element signature="e#102#119#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -661,34 +641,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Entities/User.swift">
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Extensions/Codable+handyHelpers.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="276">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Foundation.NSURLResponse/Foundation.NSURLResponse.swift">
+    <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Extensions/Bundle+readFile.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-184">
-          <caret line="108" column="11" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/APIClient.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="61" column="57" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
+        <state relative-caret-position="506">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
-            <element signature="e#144#161#0" expanded="true" />
+            <element signature="e#102#119#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Foundation.NSBundle/Foundation.NSBundle.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        <state relative-caret-position="396">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Foundation/Foundation.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="3864" column="24" lean-forward="true" selection-start-line="3864" selection-start-column="24" selection-end-line="3864" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/APIClient+Decodable.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#102#119#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -699,51 +689,168 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Mocks/APIClientMock.swift">
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Foundation.NSURLResponse/Foundation.NSURLResponse.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="66" column="69" selection-start-line="66" selection-start-column="69" selection-end-line="66" selection-end-column="69" />
+        <state relative-caret-position="-130">
+          <caret line="108" column="11" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Extensions/Bundle+readFile.swift">
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/APIClient.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="736">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
           <folding>
-            <element signature="e#102#119#0" expanded="true" />
+            <element signature="e#144#161#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Foundation/Foundation.swift">
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/URLRequestComponents.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="3860" column="88" lean-forward="true" selection-start-line="3860" selection-start-column="9" selection-end-line="3860" selection-end-column="88" />
+        <state relative-caret-position="874">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Extensions/Codable+handyHelpers.swift">
+    <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Mocks/UsersStorageSpy.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/posts_sample.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Entities/Post.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Entities/User.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Modules/Entities/UsersTests.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        <state relative-caret-position="460">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#102#119#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/APIClient+Decodable.swift">
+    <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Mocks/APIClientMock.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        <state relative-caret-position="495">
+          <caret line="67" column="58" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/PostsValidationDecorator.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/UserObject.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="16" />
+          <folding>
+            <element signature="e#102#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/RealmConvertible.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/UsersStorage.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#102#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Mocks/PostsStorageSpy.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/StorageFacade.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Mocks/StorageFake.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="40" />
+          <folding>
+            <element signature="e#102#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/PostsStorage.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="e#147#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/RxSwift/RxSwift/Subjects/PublishSubject.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Mocks/SystemNotificationStub.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Background Sync/BackgroundSyncUseCase.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/BackgroundSyncUseCaseTests.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="75" column="61" lean-forward="true" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
           <folding>
             <element signature="e#102#119#0" expanded="true" />
           </folding>
