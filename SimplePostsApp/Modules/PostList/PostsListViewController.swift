@@ -37,14 +37,40 @@ final class PostsListViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = Constants.screenTitle
         view.backgroundColor = .white
+        applyTranslations()
+        setupSubviews()
+        bind()
+    }
+
+    private func applyTranslations() {
+        title = Constants.screenTitle
+    }
+
+    private func setupSubviews() {
         let margin = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         tableView.pinToEdges(of: self, margin: margin)
+    }
+
+    private func bind() {
         viewModel.posts
-                .map { [PostsListSection(items: $0)] }
-                .drive(tableView.rx.items(dataSource: dataSource))
-                .disposed(by: disposeBag)
+            .map { [PostsListSection(items: $0)] }
+            .drive(tableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
+
+        viewModel.errorMessage
+            .drive(onNext: { [weak self] message in
+                self?.showError(with: message)
+            })
+            .disposed(by: disposeBag)
+    }
+
+    private func showError(with message: String) {
+        let alertView = UIAlertController(title: "Error".localized(), message: message, preferredStyle: .alert)
+        alertView.addAction(UIAlertAction(title: "OK".localized(), style: .default, handler: { [weak self] _ in
+            self?.dismiss(animated: true, completion: nil)
+        }))
+        present(alertView, animated: true, completion: nil)
     }
 }
 

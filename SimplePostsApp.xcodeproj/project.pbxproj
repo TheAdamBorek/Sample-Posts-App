@@ -43,6 +43,7 @@
 		54682932B9ED46D9CEECACCD /* Pods_SimplePostsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2509C8F6DD7D5F1035C4DEF /* Pods_SimplePostsAppTests.framework */; };
 		66181153219A1DA20022CD6F /* GetPostsListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66181152219A1DA20022CD6F /* GetPostsListUseCase.swift */; };
 		66181155219A24630022CD6F /* Rx+mapMany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66181154219A24630022CD6F /* Rx+mapMany.swift */; };
+		6622861B219A38B9004D7A48 /* Rx+materialized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6622861A219A38B9004D7A48 /* Rx+materialized.swift */; };
 		668014BF2199E94A0079D4A7 /* PostsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668014BE2199E94A0079D4A7 /* PostsStorage.swift */; };
 		668014C12199E9AE0079D4A7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668014C02199E9AE0079D4A7 /* Post.swift */; };
 		668014C32199EA370079D4A7 /* PostsStorageSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668014C22199EA370079D4A7 /* PostsStorageSpy.swift */; };
@@ -126,6 +127,7 @@
 		5D90D4C9BC4AEB58702D7FB5 /* Pods-SimplePostsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePostsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePostsApp/Pods-SimplePostsApp.release.xcconfig"; sourceTree = "<group>"; };
 		66181152219A1DA20022CD6F /* GetPostsListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsListUseCase.swift; sourceTree = "<group>"; };
 		66181154219A24630022CD6F /* Rx+mapMany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+mapMany.swift"; sourceTree = "<group>"; };
+		6622861A219A38B9004D7A48 /* Rx+materialized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+materialized.swift"; sourceTree = "<group>"; };
 		668014BE2199E94A0079D4A7 /* PostsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsStorage.swift; sourceTree = "<group>"; };
 		668014C02199E9AE0079D4A7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		668014C22199EA370079D4A7 /* PostsStorageSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsStorageSpy.swift; sourceTree = "<group>"; };
@@ -439,6 +441,7 @@
 				1F0FA5B13DEEB34A7EE44CE7 /* Codable+handyHelpers.swift */,
 				668014C52199FF020079D4A7 /* Rx+mapTo.swift */,
 				66181154219A24630022CD6F /* Rx+mapMany.swift */,
+				6622861A219A38B9004D7A48 /* Rx+materialized.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -668,6 +671,7 @@
 				042306522195D7C400DDB75C /* PostsListCell.swift in Sources */,
 				668014D0219A064D0079D4A7 /* Comment.swift in Sources */,
 				668014BF2199E94A0079D4A7 /* PostsStorage.swift in Sources */,
+				6622861B219A38B9004D7A48 /* Rx+materialized.swift in Sources */,
 				668014D2219A07930079D4A7 /* CommentsStorage.swift in Sources */,
 				8CB97985347C16A159D480A9 /* PostsListViewController.swift in Sources */,
 				8CB97ED33120917B32499A20 /* MainNavigator.swift in Sources */,

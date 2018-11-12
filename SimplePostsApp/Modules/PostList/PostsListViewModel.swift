@@ -15,6 +15,7 @@ import RxCocoa
 
 protocol PostsListViewModelType {
     var posts: Driver<[PostsListCellViewModelType]> { get }
+    var errorMessage: Driver<String> { get }
 }
 
 protocol PostsListCellViewModelType {
@@ -25,11 +26,19 @@ protocol PostsListCellViewModelType {
 
 final class PostsListViewModel: PostsListViewModelType {
     let posts: Driver<[PostsListCellViewModelType]>
+    let errorMessage: Driver<String>
 
     init(postListUseCase: GetPostsListUseCase) {
-        self.posts = postListUseCase.posts()
+        let postsResults = postListUseCase.posts().materialize()
+            .share(replay: 1)
+        
+        self.posts = postsResults.elemnts()
             .mapMany(PostsListCellViewModel.init)
             .asDriver(onErrorJustReturn: [])
+
+        self.errorMessage = postsResults.errors()
+            .mapTo("An error ocured. Please try agains")
+            .asDriver(onErrorDriveWith: .empty())
     }
 }
 
