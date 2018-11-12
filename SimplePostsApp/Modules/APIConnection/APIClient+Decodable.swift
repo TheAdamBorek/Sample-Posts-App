@@ -14,6 +14,6 @@ extension APIClientType {
     }
 
     private func parse<T: Decodable>(_ response: APIResponse) throws -> T {
-        return try JSONDecoder().decode(T.self, from: response.1)
+        return try JSONDecoder().decode(from: response.1)
     }
 }

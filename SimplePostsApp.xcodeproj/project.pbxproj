@@ -15,6 +15,7 @@
 		1F0FA2467C86B30BF3645F82 /* UIImage+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA4F20F5306217E3C1322 /* UIImage+UIColor.swift */; };
 		1F0FA30AB64AB3C944669A46 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAE9D21C58E360A5E1A9D /* BaseViewController.swift */; };
 		1F0FA3A76658DD261143076F /* PostsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA5FA6CB4B328C1AA4ABD /* PostsListViewModel.swift */; };
+		1F0FA469B6DB151B4B494A40 /* UsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAD6EE859814FC87B08E0 /* UsersTests.swift */; };
 		1F0FA4E2D64A6306516BA321 /* BackgroundSyncUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAC01C13CCF2B70F327C2 /* BackgroundSyncUseCase.swift */; };
 		1F0FA5EA0F7CACA23C700162 /* UsersStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA49CF13DD5B8C9549A8D /* UsersStorage.swift */; };
 		1F0FA5FCE8B80D129C66C3C4 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA8782A2060EC2CBC218D /* ParameterEncoder.swift */; };
@@ -22,6 +23,7 @@
 		1F0FA63EBFA445F8EF1D28DE /* APIClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAF455E23DC2CE3AB296A /* APIClientMock.swift */; };
 		1F0FA70953D155F6D92E15B4 /* XibBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA3FB3CF638F0E377C826 /* XibBased.swift */; };
 		1F0FA954FCCCEF4F774DF895 /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA1DD94A87B1C9B5F84FC /* UserObject.swift */; };
+		1F0FA96309C6478AC2BDB6F5 /* Bundle+readFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAECB3520665D1EECDF95 /* Bundle+readFile.swift */; };
 		1F0FA989270AC23BB2668C95 /* URLRequestComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA811DB3BD8419A19A11B /* URLRequestComponents.swift */; };
 		1F0FA9DE477922F5E4EC5AD0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAB96A8E7BDC4ECD214F0 /* User.swift */; };
 		1F0FA9DFB23DF71AF4ED9F17 /* UnitTestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA8496040DFA07490CC2E /* UnitTestsAppDelegate.swift */; };
@@ -33,6 +35,7 @@
 		1F0FADB9246B5AE02E043765 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA63D7AC38701FF7F184E /* main.swift */; };
 		1F0FAE7B9BE13A8349C78BA9 /* UserStorageSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA1246229E914CB9D082D /* UserStorageSpy.swift */; };
 		1F0FAEA93482A5A90C94F285 /* APIClient+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FABF5FDBF772BA090F6B9 /* APIClient+Decodable.swift */; };
+		1F0FAFCE0F1C7D87CAE81A05 /* Codable+handyHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA5B13DEEB34A7EE44CE7 /* Codable+handyHelpers.swift */; };
 		54682932B9ED46D9CEECACCD /* Pods_SimplePostsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2509C8F6DD7D5F1035C4DEF /* Pods_SimplePostsAppTests.framework */; };
 		66CDCBA22197541A00E72A43 /* SnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CDCBA12197541A00E72A43 /* SnapshotTestCase.swift */; };
 		66CDCBA82198478A00E72A43 /* PostsListCellSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CDCBA72198478A00E72A43 /* PostsListCellSnapshotTest.swift */; };
@@ -74,6 +77,7 @@
 		1F0FA49CF13DD5B8C9549A8D /* UsersStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersStorage.swift; sourceTree = "<group>"; };
 		1F0FA4F20F5306217E3C1322 /* UIImage+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+UIColor.swift"; sourceTree = "<group>"; };
 		1F0FA55F2FC9526EEEB2A127 /* PostsListSnapshotTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListSnapshotTest.swift; sourceTree = "<group>"; };
+		1F0FA5B13DEEB34A7EE44CE7 /* Codable+handyHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Codable+handyHelpers.swift"; sourceTree = "<group>"; };
 		1F0FA5FA6CB4B328C1AA4ABD /* PostsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListViewModel.swift; sourceTree = "<group>"; };
 		1F0FA63D7AC38701FF7F184E /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1F0FA811DB3BD8419A19A11B /* URLRequestComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestComponents.swift; sourceTree = "<group>"; };
@@ -85,7 +89,9 @@
 		1F0FABF5FDBF772BA090F6B9 /* APIClient+Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIClient+Decodable.swift"; sourceTree = "<group>"; };
 		1F0FAC01C13CCF2B70F327C2 /* BackgroundSyncUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundSyncUseCase.swift; sourceTree = "<group>"; };
 		1F0FAC8D78088C42BE31A196 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		1F0FAD6EE859814FC87B08E0 /* UsersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTests.swift; sourceTree = "<group>"; };
 		1F0FAE9D21C58E360A5E1A9D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1F0FAECB3520665D1EECDF95 /* Bundle+readFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+readFile.swift"; sourceTree = "<group>"; };
 		1F0FAF455E23DC2CE3AB296A /* APIClientMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientMock.swift; sourceTree = "<group>"; };
 		1F0FAF95A13E0BE87AB10D44 /* users_sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users_sample.json; sourceTree = "<group>"; };
 		1F0FAFA9ECA015BEC60BFCAD /* UIView+PinToEdges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PinToEdges.swift"; sourceTree = "<group>"; };
@@ -175,6 +181,7 @@
 				66CDCBA12197541A00E72A43 /* SnapshotTestCase.swift */,
 				1F0FA8496040DFA07490CC2E /* UnitTestsAppDelegate.swift */,
 				1F0FA64B00F6D5FFF291D627 /* Mocks */,
+				1F0FA4D533FE625A4E8AE48C /* Extensions */,
 			);
 			path = SimplePostsAppTests;
 			sourceTree = "<group>";
@@ -207,6 +214,22 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		1F0FA36667EBF01E0A4F8471 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1F0FAD6EE859814FC87B08E0 /* UsersTests.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		1F0FA4D533FE625A4E8AE48C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1F0FAECB3520665D1EECDF95 /* Bundle+readFile.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		1F0FA64B00F6D5FFF291D627 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +245,7 @@
 				1F0FADA2A4D8F7DF391EA4E4 /* PostsList */,
 				1F0FA7C8AE7A9D037D1FE0FE /* APIConnection */,
 				1F0FAF0E0E432B6D2055C7ED /* BackgroundSyncUseCase */,
+				1F0FA36667EBF01E0A4F8471 /* Entities */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -339,6 +363,7 @@
 				8CB973A1C6986993D1108162 /* String+localized.swift */,
 				1F0FA4F20F5306217E3C1322 /* UIImage+UIColor.swift */,
 				1F0FAFA9ECA015BEC60BFCAD /* UIView+PinToEdges.swift */,
+				1F0FA5B13DEEB34A7EE44CE7 /* Codable+handyHelpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -583,6 +608,7 @@
 				1F0FA5EA0F7CACA23C700162 /* UsersStorage.swift in Sources */,
 				1F0FA9DE477922F5E4EC5AD0 /* User.swift in Sources */,
 				1F0FAEA93482A5A90C94F285 /* APIClient+Decodable.swift in Sources */,
+				1F0FAFCE0F1C7D87CAE81A05 /* Codable+handyHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +625,8 @@
 				1F0FA9DFB23DF71AF4ED9F17 /* UnitTestsAppDelegate.swift in Sources */,
 				1F0FA63EBFA445F8EF1D28DE /* APIClientMock.swift in Sources */,
 				1F0FAE7B9BE13A8349C78BA9 /* UserStorageSpy.swift in Sources */,
+				1F0FA469B6DB151B4B494A40 /* UsersTests.swift in Sources */,
+				1F0FA96309C6478AC2BDB6F5 /* Bundle+readFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
