@@ -9,35 +9,23 @@
 import Foundation
 import UIKit
 
-final class PostsListCell: RxTableViewCell {
-    @IBOutlet weak var pictureImageView: UIImageView!
+final class PostsListCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
+    @IBOutlet private weak var authorStaticLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
-    @IBOutlet weak var authorAvatarView: UIImageView!
-    @IBOutlet weak var createdDateLabel: UILabel!
-    @IBOutlet weak var readingTimeLabel: UILabel!
 
     var viewModel: PostsListCellViewModelType? {
         didSet {
-            disposeOldBinding()
             bind()
         }
     }
 
     private func bind() {
-        guard let viewModel = viewModel else { return }
-        titleLabel.text = viewModel.title
-        bodyLabel.text = viewModel.body
-        authorLabel.text = viewModel.authorName
-        createdDateLabel.text = viewModel.createdDate
-        readingTimeLabel.text = viewModel.readTime
-        viewModel.authorAvatar
-                .drive(authorAvatarView.rx.image)
-                .disposed(by: disposeBag)
-        viewModel.picture
-            .drive(pictureImageView.rx.image)
-            .disposed(by: disposeBag)
+        authorStaticLabel.text = "Author".localized() + ":"
+        titleLabel.text = viewModel?.title
+        bodyLabel.text = viewModel?.body
+        authorLabel.text = viewModel?.author
     }
 }
 

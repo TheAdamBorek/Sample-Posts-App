@@ -20,11 +20,7 @@ protocol PostsListViewModelType {
 protocol PostsListCellViewModelType {
     var title: String { get }
     var body: String { get }
-    var picture: Driver<UIImage> { get }
-    var createdDate: String { get }
-    var readTime: String { get }
-    var authorName: String { get }
-    var authorAvatar: Driver<UIImage> { get }
+    var author: String { get }
 }
 
 final class PostsListViewModel: PostsListViewModelType {
@@ -35,14 +31,6 @@ final class PostsListViewModel: PostsListViewModelType {
             .mapMany(PostsListCellViewModel.init)
             .asDriver(onErrorJustReturn: [])
     }
-
-    private let _posts = [
-        DummyPostListCell(),
-        DummyPostListCell(),
-        DummyPostListCell(),
-        DummyPostListCell(),
-        DummyPostListCell()
-    ]
 }
 
 class PostsListCellViewModel: PostsListCellViewModelType {
@@ -59,30 +47,8 @@ class PostsListCellViewModel: PostsListCellViewModelType {
         return post.body
     }
 
-    private(set) var createdDate: String = "10 November 2018"
-    private(set) var readTime: String = "5 min"
-    private(set) var authorName: String = "Adam Borek"
-    lazy var picture: Driver<UIImage> = {
-        return Driver.just(UIImage(named: "image_placeholder") ?? UIImage())
-    }()
+    var author: String {
+        return String(describing: post.authorsId)
+    }
 
-    lazy var authorAvatar: Driver<UIImage> = {
-        return Driver.just(UIImage(named: "author_placeholder") ?? UIImage())
-    }()
-
-}
-
-class DummyPostListCell: PostsListCellViewModelType {
-    private(set) var title: String = "The longer title"
-    private(set) var body: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-    private(set) var createdDate: String = "10 November 2018"
-    private(set) var readTime: String = "5 min"
-    private(set) var authorName: String = "Adam Borek"
-    lazy var picture: Driver<UIImage> = {
-        return Driver.just(UIImage(named: "image_placeholder") ?? UIImage())
-    }()
-
-    lazy var authorAvatar: Driver<UIImage> = {
-        return Driver.just(UIImage(named: "author_placeholder") ?? UIImage())
-    }()
 }

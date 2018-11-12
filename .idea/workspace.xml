@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38fdad5b-636e-4dd9-835c-cfac539a6447" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/GetPostsListUseCase.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimplePostsApp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/Database/GenericRealm.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Database/GenericRealm.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/Database/PostsStorage.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Database/PostsStorage.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListCell.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListCell.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListCell.xib" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListCell.xib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,14 +40,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/UsersStorage.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="687">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="595">
+              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
               <folding>
                 <element signature="e#102#119#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="549">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
         </entry>
@@ -109,18 +118,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/PostsStorage.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1147">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
-              <folding>
-                <element signature="e#147#164#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -153,7 +150,6 @@
         <option value="$PROJECT_DIR$/SimplePostsApp/Extensions/UIView+PinToEdges.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewController.swift" />
         <option value="$PROJECT_DIR$/SimplePostsAppTests/Modules/PostsList/PostsListSnapshotTest.swift" />
-        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListCell.swift" />
         <option value="$PROJECT_DIR$/SimplePostsAppTests/Modules/APIConnection/APIClientTests.swift" />
         <option value="$PROJECT_DIR$/SimplePostsAppTests/Modules/APIConnection/Encoding/ParameterEncoder.swift" />
@@ -190,6 +186,7 @@
         <option value="$PROJECT_DIR$/SimplePostsAppTests/Modules/Database/UserStorageTests.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Database/UsersStorage.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Entities/Comment.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift" />
       </list>
     </option>
   </component>
@@ -559,13 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SimplePostsApp/main.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -860,11 +850,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Database/UsersStorage.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="595">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
           <folding>
             <element signature="e#102#119#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>

@@ -17,7 +17,7 @@ final class PostsListViewController: BaseViewController {
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.register(cell: PostsListCell.self)
-        tableView.estimatedRowHeight = 200
+        tableView.estimatedRowHeight = 100
         return tableView
     }()
 

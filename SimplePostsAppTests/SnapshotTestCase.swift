@@ -11,6 +11,9 @@ import XCTest
 import FBSnapshotTestCase
 
 class SnapshotTestCase: FBSnapshotTestCase {
+    override func setUp() {
+        super.setUp()
+    }
     enum ScreenSize: String {
         case iPhoneFive
         case iPhoneEight
