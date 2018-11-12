@@ -4,3 +4,9 @@
 //
 
 import Foundation
+
+final class BackgrounSyncUseCase {
+    func start() {
+        
+    }
+}

@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38fdad5b-636e-4dd9-835c-cfac539a6447" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/APIClient.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/URLRequestComponents.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Background Sync/BackgroundSyncUseCase.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Shared/AnyError.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimplePostsAppTests/Modules/APIConnection/APIClientTests.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimplePostsAppTests/Modules/APIConnection/Encoding/ParameterEncoder.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimplePostsAppTests/Modules/APIConnection/MockURLProtocol.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsApp/main.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/BackgroundSyncUseCaseTests.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsAppTests/UnitTestsAppDelegate.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimplePostsApp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsApp/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/AppDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimplePostsApp/Modules/Background Sync/BackgroundSyncUseCase.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Background Sync/BackgroundSyncUseCase.swift" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +31,59 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/APIClient.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="330">
+              <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+              <folding>
+                <element signature="e#144#161#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/BackgroundSyncUseCaseTests.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#102#119#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/UnitTestsAppDelegate.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#102#119#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimplePostsApp/AppDelegate.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SimplePostsApp/main.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+              <folding>
+                <element signature="e#102#119#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/URLRequestComponents.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="598">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -55,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Modules/APIConnection/Encoding/ParameterEncoder.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -82,7 +128,6 @@
       <list>
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Initializing.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Initializing/MainNavigator.swift" />
-        <option value="$PROJECT_DIR$/SimplePostsApp/AppDelegate.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Extensions/String+localized.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Shared/BaseViewController.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Shared/XibBased.swift" />
@@ -100,6 +145,10 @@
         <option value="$PROJECT_DIR$/SimplePostsAppTests/Modules/APIConnection/Encoding/ParameterEncoder.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/URLRequestComponents.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/APIClient.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/BackgroundSyncUseCaseTests.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsAppTests/UnitTestsAppDelegate.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsApp/AppDelegate.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsApp/main.swift" />
       </list>
     </option>
   </component>
@@ -130,41 +179,7 @@
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
-              <item name="SimplePostsApp" type="fcab9f18:XcodeViewNode" />
-              <item name="Modules" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
-              <item name="SimplePostsApp" type="fcab9f18:XcodeViewNode" />
-              <item name="Modules" type="fcab9f18:XcodeViewNode" />
-              <item name="APIConnection" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
               <item name="SimplePostsAppTests" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
-              <item name="SimplePostsAppTests" type="fcab9f18:XcodeViewNode" />
-              <item name="Modules" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
-              <item name="SimplePostsAppTests" type="fcab9f18:XcodeViewNode" />
-              <item name="Modules" type="fcab9f18:XcodeViewNode" />
-              <item name="APIConnection" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
-              <item name="SimplePostsAppTests" type="fcab9f18:XcodeViewNode" />
-              <item name="Modules" type="fcab9f18:XcodeViewNode" />
-              <item name="APIConnection" type="fcab9f18:XcodeViewNode" />
-              <item name="Encoding" type="fcab9f18:XcodeViewNode" />
             </path>
           </expand>
           <select />
@@ -244,19 +259,22 @@
     <history-entry file="APIClientTests - 2018.11.11 at 13h 11m 02s.xml">
       <configuration name="APIClientTests" configurationId="OCUnitRunConfiguration" />
     </history-entry>
+    <history-entry file="All_tests - 2018.11.12 at 11h 41m 10s.xml">
+      <configuration name="All tests" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <frame x="0" y="0" width="1566" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27795526" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25131235" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info active="true" id="Messages" order="4" sideWeight="0.49946752" visible="true" weight="0.25328085" />
+      <window_info id="Messages" order="4" sideWeight="0.49946752" visible="true" weight="0.25328085" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946752" weight="0.48114902" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" weight="0.28186715" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.28186715" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -299,13 +317,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Initializing.swift" />
-    <entry file="file://$PROJECT_DIR$/SimplePostsApp/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/Initializing/MainNavigator.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -480,21 +491,61 @@
     <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Modules/APIConnection/Encoding/ParameterEncoder.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/URLRequestComponents.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/APIConnection/APIClient.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="330">
+          <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+          <folding>
+            <element signature="e#144#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/BackgroundSyncUseCaseTests.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#102#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/UnitTestsAppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#102#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/main.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding>
+            <element signature="e#102#119#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
