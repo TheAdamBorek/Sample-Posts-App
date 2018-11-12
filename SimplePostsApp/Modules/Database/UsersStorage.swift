@@ -9,29 +9,35 @@ import RealmSwift
 
 protocol UsersStorage {
     func user(with id: Int) throws -> User
+    func allUsers() throws -> [User]
     func save(_ user: User) throws
     func save(_ users: [User]) throws
 }
 
 final class RealmUsersStorage: UsersStorage {
-    private let realmConfig: Realm.Configuration
+    private let realm: GenericRealm
     init(realmConfig: Realm.Configuration) {
-        self.realmConfig = realmConfig
+        self.realm = GenericRealm(configuration: realmConfig)
     }
 
     func user(with id: Int) throws -> User {
-        fatalError("not implemented yet")
+        return try realm.object(forPrimaryKey: id)
+    }
+
+    func allUsers() throws -> [User] {
+        return try realm.findAll()
     }
 
     func save(_ user: User) throws {
-//        let userObject = user.asRealmObject()
-//        let realm = try Realm(configuration: realmConfig)
-//        try realm.write {
-//            realm.add(userObject, update: true)
-//        }
+        try realm.write {
+            try realm.save(user)
+        }
     }
 
     func save(_ users: [User]) throws {
+        try realm.write {
+            try realm.save(users)
+        }
     }
 }
 
@@ -42,6 +48,12 @@ final class UserObject: Object {
     @objc dynamic var email: String = ""
     override class func primaryKey() -> String? {
         return "id"
+    }
+}
+
+extension UserObject: DomainConvertible {
+    func asDomain() -> User? {
+        return User(id: id, name: name, username: username, email: email)
     }
 }
 

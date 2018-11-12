@@ -23,3 +23,12 @@ struct Post: Decodable {
         case authorsId = "userId"
     }
 }
+
+extension Post: Equatable {
+    static func ==(lhs: Post, rhs: Post) -> Bool {
+        return lhs.id == lhs.id &&
+            lhs.title == rhs.title &&
+            lhs.body == rhs.body &&
+            lhs.authorsId == rhs.authorsId
+    }
+}

@@ -21,6 +21,10 @@ extension Storage: UsersStorage {
         return try users.user(with: id)
     }
 
+    func allUsers() throws -> [User] {
+        return try users.allUsers()
+    }
+
     func save(_ user: User) throws {
         try users.save(user)
     }
@@ -32,6 +36,14 @@ extension Storage: UsersStorage {
 }
 
 extension Storage: PostsStorage {
+    func post(with id: Int) throws -> Post {
+        return try post(with: id)
+    }
+
+    func allPosts() throws -> [Post] {
+        return try posts.allPosts()
+    }
+
     func save(_ post: Post) throws {
         try posts.save(post)
     }
@@ -42,6 +54,14 @@ extension Storage: PostsStorage {
 }
 
 extension Storage: CommentsStorage {
+    func comment(with id: Int) throws -> Comment {
+        return try comments.comment(with: id)
+    }
+
+    func allComments() throws -> [Comment] {
+        return try comments.allComments()
+    }
+
     func save(_ comment: Comment) throws {
         try comments.save(comment)
     }

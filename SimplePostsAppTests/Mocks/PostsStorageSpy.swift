@@ -13,6 +13,15 @@ final class PostsStorageSpy: PostsStorage {
     var failingReason: Error?
     var posts = [Post]()
 
+    func post(with id: Int) throws -> Post {
+        let post = posts.first(where: { $0.id == id })
+        return post!
+    }
+
+    func allPosts() throws -> [Post] {
+        return posts
+    }
+
     func save(_ post: Post) throws {
         try throwErrorIfGiven()
         posts.append(post)

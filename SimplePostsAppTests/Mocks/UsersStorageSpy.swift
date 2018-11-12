@@ -16,6 +16,10 @@ final class UserStorageSpy: UsersStorage {
         return user!
     }
 
+    func allUsers() throws -> [User] {
+        return users
+    }
+
     func save(_ user: User) throws {
         try throwErrorIfGiven()
         users.append(user)

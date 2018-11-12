@@ -10,3 +10,12 @@ struct User: Decodable {
     let username: String
     let email: String
 }
+
+extension User: Equatable {
+    static func ==(lhs: User, rhs: User) -> Bool {
+        return lhs.id == rhs.id &&
+               lhs.name == rhs.name &&
+               lhs.username == rhs.username &&
+               lhs.email == rhs.email
+    }
+}

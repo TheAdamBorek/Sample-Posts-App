@@ -12,6 +12,7 @@
 		04603B75219327DE00453ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04603B74219327DE00453ADC /* AppDelegate.swift */; };
 		04603B7C219327DF00453ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04603B7B219327DF00453ADC /* Assets.xcassets */; };
 		04603B7F219327DF00453ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04603B7D219327DF00453ADC /* LaunchScreen.storyboard */; };
+		1F0FA0BEF7A387666B7DE0FF /* User+fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAD043E2E065420040600 /* User+fake.swift */; };
 		1F0FA2467C86B30BF3645F82 /* UIImage+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA4F20F5306217E3C1322 /* UIImage+UIColor.swift */; };
 		1F0FA30AB64AB3C944669A46 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FAE9D21C58E360A5E1A9D /* BaseViewController.swift */; };
 		1F0FA3A76658DD261143076F /* PostsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA5FA6CB4B328C1AA4ABD /* PostsListViewModel.swift */; };
@@ -37,6 +38,7 @@
 		1F0FADB9246B5AE02E043765 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA63D7AC38701FF7F184E /* main.swift */; };
 		1F0FAE7B9BE13A8349C78BA9 /* UsersStorageSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA1246229E914CB9D082D /* UsersStorageSpy.swift */; };
 		1F0FAEA93482A5A90C94F285 /* APIClient+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FABF5FDBF772BA090F6B9 /* APIClient+Decodable.swift */; };
+		1F0FAF703EC303AA5AF1D9D6 /* UserStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA9DCD7A165B7DBCC53A5 /* UserStorageTests.swift */; };
 		1F0FAFCE0F1C7D87CAE81A05 /* Codable+handyHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FA5B13DEEB34A7EE44CE7 /* Codable+handyHelpers.swift */; };
 		54682932B9ED46D9CEECACCD /* Pods_SimplePostsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2509C8F6DD7D5F1035C4DEF /* Pods_SimplePostsAppTests.framework */; };
 		668014BF2199E94A0079D4A7 /* PostsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668014BE2199E94A0079D4A7 /* PostsStorage.swift */; };
@@ -51,6 +53,11 @@
 		668014D0219A064D0079D4A7 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668014CF219A064D0079D4A7 /* Comment.swift */; };
 		668014D2219A07930079D4A7 /* CommentsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668014D1219A07930079D4A7 /* CommentsStorage.swift */; };
 		668014D4219A07CC0079D4A7 /* CommentsStorageSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668014D3219A07CC0079D4A7 /* CommentsStorageSpy.swift */; };
+		668014D6219A0D6D0079D4A7 /* GenericRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668014D5219A0D6D0079D4A7 /* GenericRealm.swift */; };
+		668014D8219A13FE0079D4A7 /* PostsStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668014D7219A13FE0079D4A7 /* PostsStorageTests.swift */; };
+		668014DA219A142E0079D4A7 /* Post+fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668014D9219A142E0079D4A7 /* Post+fake.swift */; };
+		668014DC219A18520079D4A7 /* CommentsStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668014DB219A18520079D4A7 /* CommentsStorageTests.swift */; };
+		668014DE219A18C30079D4A7 /* Comment+fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668014DD219A18C30079D4A7 /* Comment+fake.swift */; };
 		66CDCBA22197541A00E72A43 /* SnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CDCBA12197541A00E72A43 /* SnapshotTestCase.swift */; };
 		66CDCBA82198478A00E72A43 /* PostsListCellSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CDCBA72198478A00E72A43 /* PostsListCellSnapshotTest.swift */; };
 		66CDCBAA21984D4300E72A43 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CDCBA921984D4300E72A43 /* APIClient.swift */; };
@@ -100,11 +107,13 @@
 		1F0FA8782A2060EC2CBC218D /* ParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
 		1F0FA8E5CBD9053E223134D9 /* RealmConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConvertible.swift; sourceTree = "<group>"; };
 		1F0FA90346D351C72AF3CA26 /* StorageFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageFacade.swift; sourceTree = "<group>"; };
+		1F0FA9DCD7A165B7DBCC53A5 /* UserStorageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStorageTests.swift; sourceTree = "<group>"; };
 		1F0FAA3DCB995A4314502DC3 /* TitleStylingStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleStylingStrategy.swift; sourceTree = "<group>"; };
 		1F0FAB96A8E7BDC4ECD214F0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1F0FABF5FDBF772BA090F6B9 /* APIClient+Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIClient+Decodable.swift"; sourceTree = "<group>"; };
 		1F0FAC01C13CCF2B70F327C2 /* BackgroundSyncUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundSyncUseCase.swift; sourceTree = "<group>"; };
 		1F0FAC8D78088C42BE31A196 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		1F0FAD043E2E065420040600 /* User+fake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+fake.swift"; sourceTree = "<group>"; };
 		1F0FAD6EE859814FC87B08E0 /* UsersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTests.swift; sourceTree = "<group>"; };
 		1F0FAE9D21C58E360A5E1A9D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		1F0FAECB3520665D1EECDF95 /* Bundle+readFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+readFile.swift"; sourceTree = "<group>"; };
@@ -124,6 +133,11 @@
 		668014CF219A064D0079D4A7 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		668014D1219A07930079D4A7 /* CommentsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsStorage.swift; sourceTree = "<group>"; };
 		668014D3219A07CC0079D4A7 /* CommentsStorageSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsStorageSpy.swift; sourceTree = "<group>"; };
+		668014D5219A0D6D0079D4A7 /* GenericRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericRealm.swift; sourceTree = "<group>"; };
+		668014D7219A13FE0079D4A7 /* PostsStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsStorageTests.swift; sourceTree = "<group>"; };
+		668014D9219A142E0079D4A7 /* Post+fake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+fake.swift"; sourceTree = "<group>"; };
+		668014DB219A18520079D4A7 /* CommentsStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsStorageTests.swift; sourceTree = "<group>"; };
+		668014DD219A18C30079D4A7 /* Comment+fake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+fake.swift"; sourceTree = "<group>"; };
 		66CDCBA12197541A00E72A43 /* SnapshotTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTestCase.swift; sourceTree = "<group>"; };
 		66CDCBA72198478A00E72A43 /* PostsListCellSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListCellSnapshotTest.swift; sourceTree = "<group>"; };
 		66CDCBA921984D4300E72A43 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -247,6 +261,9 @@
 				1F0FAD6EE859814FC87B08E0 /* UsersTests.swift */,
 				668014C9219A04A30079D4A7 /* PostsTests.swift */,
 				668014CB219A05690079D4A7 /* CommentsTests.swift */,
+				1F0FAD043E2E065420040600 /* User+fake.swift */,
+				668014D9219A142E0079D4A7 /* Post+fake.swift */,
+				668014DD219A18C30079D4A7 /* Comment+fake.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -278,6 +295,7 @@
 				1F0FA7C8AE7A9D037D1FE0FE /* APIConnection */,
 				1F0FAF0E0E432B6D2055C7ED /* BackgroundSyncUseCase */,
 				1F0FA36667EBF01E0A4F8471 /* Entities */,
+				1F0FAFDC13A4462EB8DE33A8 /* Database */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -320,6 +338,7 @@
 				1F0FA90346D351C72AF3CA26 /* StorageFacade.swift */,
 				1F0FA8E5CBD9053E223134D9 /* RealmConvertible.swift */,
 				668014D1219A07930079D4A7 /* CommentsStorage.swift */,
+				668014D5219A0D6D0079D4A7 /* GenericRealm.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -350,6 +369,16 @@
 				1F0FA06AC18D3B8325F1C182 /* posts_sample.json */,
 			);
 			path = BackgroundSyncUseCase;
+			sourceTree = "<group>";
+		};
+		1F0FAFDC13A4462EB8DE33A8 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				1F0FA9DCD7A165B7DBCC53A5 /* UserStorageTests.swift */,
+				668014D7219A13FE0079D4A7 /* PostsStorageTests.swift */,
+				668014DB219A18520079D4A7 /* CommentsStorageTests.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		5A95FA09793502E41F16B161 /* Pods */ = {
@@ -655,6 +684,7 @@
 				1F0FAEA93482A5A90C94F285 /* APIClient+Decodable.swift in Sources */,
 				668014C62199FF020079D4A7 /* Rx+mapTo.swift in Sources */,
 				1F0FAFCE0F1C7D87CAE81A05 /* Codable+handyHelpers.swift in Sources */,
+				668014D6219A0D6D0079D4A7 /* GenericRealm.swift in Sources */,
 				1F0FAAC1DB1D91F2E302E4E8 /* StorageFacade.swift in Sources */,
 				1F0FA537823AA4B824FF546A /* RealmConvertible.swift in Sources */,
 			);
@@ -667,6 +697,7 @@
 				66CDCBA82198478A00E72A43 /* PostsListCellSnapshotTest.swift in Sources */,
 				1F0FAD60B120C0502C027677 /* PostsListSnapshotTest.swift in Sources */,
 				668014C82199FF4C0079D4A7 /* SystemNotificationStub.swift in Sources */,
+				668014DA219A142E0079D4A7 /* Post+fake.swift in Sources */,
 				66CDCBAC2198521A00E72A43 /* MockURLProtocol.swift in Sources */,
 				66CDCBA22197541A00E72A43 /* SnapshotTestCase.swift in Sources */,
 				1F0FA6265DBE70ACBA01FE9B /* APIClientTests.swift in Sources */,
@@ -675,12 +706,17 @@
 				668014D4219A07CC0079D4A7 /* CommentsStorageSpy.swift in Sources */,
 				1F0FA9DFB23DF71AF4ED9F17 /* UnitTestsAppDelegate.swift in Sources */,
 				1F0FA63EBFA445F8EF1D28DE /* APIClientMock.swift in Sources */,
+				668014D8219A13FE0079D4A7 /* PostsStorageTests.swift in Sources */,
+				668014DC219A18520079D4A7 /* CommentsStorageTests.swift in Sources */,
 				1F0FAE7B9BE13A8349C78BA9 /* UsersStorageSpy.swift in Sources */,
 				1F0FA469B6DB151B4B494A40 /* UsersTests.swift in Sources */,
 				668014CC219A05690079D4A7 /* CommentsTests.swift in Sources */,
 				668014C32199EA370079D4A7 /* PostsStorageSpy.swift in Sources */,
 				1F0FA96309C6478AC2BDB6F5 /* Bundle+readFile.swift in Sources */,
 				1F0FA9B2801F6883FC6A6706 /* posts_sample.json in Sources */,
+				1F0FAF703EC303AA5AF1D9D6 /* UserStorageTests.swift in Sources */,
+				1F0FA0BEF7A387666B7DE0FF /* User+fake.swift in Sources */,
+				668014DE219A18C30079D4A7 /* Comment+fake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

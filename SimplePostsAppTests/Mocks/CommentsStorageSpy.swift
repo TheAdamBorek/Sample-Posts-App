@@ -13,6 +13,15 @@ final class CommentsStorageSpy: CommentsStorage {
     var failingReason: Error?
     var comments = [Comment]()
 
+    func comment(with id: Int) throws -> Comment {
+        let comment = comments.first { $0.id == id }
+        return comment!
+    }
+
+    func allComments() throws -> [Comment] {
+        return comments
+    }
+
     func save(_ comment: Comment) throws {
         try throwErrorIfGiven()
         comments.append(comment)
