@@ -4,13 +4,6 @@
 //
 
 import Foundation
-
-// In ideal world ViewModels shouldn't import UIKit, because ViewModels don't have references to UIViews.
-// However, Apple designed UIKit to also contains UI models like UIImage or NSDataAsset.
-// The decision whether ViewModel can use UIImages or other UI models depends on the project.
-// For this POC I decided that creating a new type to hide UIImage from ViewModel would be an overkill.
-
-import UIKit
 import RxSwift
 import RxCocoa
 
