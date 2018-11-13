@@ -9,15 +9,6 @@ import RxBlocking
 import RxSwift
 @testable import SimplePostsApp
 
-
-// In this test I havn't mocked any other dependency used in the flow of sending a request.
-// For example I havn't mocked the encoder in the FakeRequest. I wanted to test the behaviour of API layer no matter
-// how class are split. Some developers could say it's an integration test. I think it's still a unit test.
-// In my opinion we do a common mistatke in iOS industry by saying that UNIT test == CLASS test.
-// UNIT can be more than that (UNIT != CLASS).
-// As a result if we change implementation to Alamofire the test file wouldn't have to change. That's the point of test.
-// Easy refactor.
-// For more about my testing approach check the README.md file
 final class APIClientTests: XCTestCase {
     var apiClient: APIClient!
 
