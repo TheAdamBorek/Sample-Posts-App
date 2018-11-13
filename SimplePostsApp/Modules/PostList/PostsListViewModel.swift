@@ -11,47 +11,65 @@ import Foundation
 // For this POC I decided that creating a new type to hide UIImage from ViewModel would be an overkill.
 
 import UIKit
+import RxSwift
 import RxCocoa
 
 protocol PostsListViewModelType {
     var posts: Driver<[PostsListCellViewModelType]> { get }
+    var errorMessage: Driver<String> { get }
+    var didTapAtIndex: PublishRelay<Int> { get }
 }
 
 protocol PostsListCellViewModelType {
     var title: String { get }
     var body: String { get }
-    var picture: Driver<UIImage> { get }
-    var createdDate: String { get }
-    var readTime: String { get }
-    var authorName: String { get }
-    var authorAvatar: Driver<UIImage> { get }
+    var author: String { get }
 }
 
 final class PostsListViewModel: PostsListViewModelType {
-    private let _posts = [
-        DummyPostListCell(),
-        DummyPostListCell(),
-        DummyPostListCell(),
-        DummyPostListCell(),
-        DummyPostListCell()
-    ]
+    let posts: Driver<[PostsListCellViewModelType]>
+    let errorMessage: Driver<String>
+    var navigator: PostDetailsNavigating?
+    let didTapAtIndex = PublishRelay<Int>()
 
-    var posts: Driver<[PostsListCellViewModelType]> {
-        return Driver.just(_posts)
+    private let disposeBag = DisposeBag()
+    init(postListUseCase: GetPostsListUseCase) {
+        let postsResults = postListUseCase.posts().materialize()
+            .share(replay: 1)
+        
+        self.posts = postsResults.elemnts()
+            .mapMany(PostsListCellViewModel.init)
+            .asDriver(onErrorJustReturn: [])
+
+        self.errorMessage = postsResults.errors()
+            .mapTo("An error ocured. Please try agains")
+            .asDriver(onErrorDriveWith: .empty())
+
+        self.didTapAtIndex
+            .withLatestFrom(postsResults.elemnts()) { index, posts in return posts[index] }
+            .subscribe(onNext: { [weak self] post in
+                self?.navigator?.show(detailsOf: post)
+            })
+            .disposed(by: disposeBag)
     }
 }
 
-class DummyPostListCell: PostsListCellViewModelType {
-    private(set) var title: String = "The longer title"
-    private(set) var body: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-    private(set) var createdDate: String = "10 November 2018"
-    private(set) var readTime: String = "5 min"
-    private(set) var authorName: String = "Adam Borek"
-    lazy var picture: Driver<UIImage> = {
-        return Driver.just(UIImage(named: "image_placeholder") ?? UIImage())
-    }()
+class PostsListCellViewModel: PostsListCellViewModelType {
+    private let post: Post
+    init(post: Post) {
+        self.post = post
+    }
 
-    lazy var authorAvatar: Driver<UIImage> = {
-        return Driver.just(UIImage(named: "author_placeholder") ?? UIImage())
-    }()
+    var title: String {
+        return post.title
+    }
+
+    var body: String {
+        return post.body
+    }
+
+    var author: String {
+        return String(describing: post.authorsId)
+    }
+
 }

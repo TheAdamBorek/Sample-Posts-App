@@ -9,9 +9,9 @@ import UIKit
 class BaseViewController: UIViewController {
     private let titleStyling: TitleStylingStrategy
 
-    init(titleStyling: TitleStylingStrategy = LargeTitleStyling()) {
+    init(titleStyling: TitleStylingStrategy = LargeTitleStyling(), nibName: String? = nil, bundle: Bundle? = nil) {
         self.titleStyling = titleStyling
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: nibName, bundle: bundle)
     }
 
     @available(*, unavailable)

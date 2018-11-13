@@ -19,7 +19,7 @@ final class PostsListCellSnapshotTest: SnapshotTestCase {
         let cell = PostsListCell.fromXib(translatesAutoresizingMaskIntoConstraints: false)
         let iPhoneXWidth = ScreenSize.iPhoneX.bounds.width
         let bounds = CGRect(x: 0, y: 0, width: iPhoneXWidth, height: 350)
-        cell.viewModel = DummyPostListCell()
+        cell.viewModel = DummyPostListCellViewModel()
         verify(view: cell, frame: bounds)
     }
 }

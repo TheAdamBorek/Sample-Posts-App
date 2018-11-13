@@ -8,11 +8,16 @@
 
 import UIKit
 
-@UIApplicationMain
+protocol Initializer {
+    func initialize(with options: [UIApplication.LaunchOptionsKey: Any]?)
+}
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
     private let window = UIWindow()
+    private let initializers: [Initializer] = [BackgroundSyncInitializer()]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        initializers.forEach { $0.initialize(with: launchOptions) }
         let mainNavigator = MainNavigator(window: window)
         mainNavigator.navigateToFirstScene()
         return true

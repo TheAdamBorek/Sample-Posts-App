@@ -6,6 +6,11 @@ PODS:
   - iOSSnapshotTestCase/SwiftSupport (4.0.0):
     - iOSSnapshotTestCase/Core
   - Kingfisher (4.10.1)
+  - Realm (3.11.1):
+    - Realm/Headers (= 3.11.1)
+  - Realm/Headers (3.11.1)
+  - RealmSwift (3.11.1):
+    - Realm (= 3.11.1)
   - RxAtomic (4.4.0)
   - RxBlocking (4.4.0):
     - RxAtomic (~> 4.4)
@@ -22,6 +27,7 @@ PODS:
 DEPENDENCIES:
   - iOSSnapshotTestCase
   - Kingfisher
+  - RealmSwift
   - RxBlocking
   - RxCocoa
   - RxDataSources
@@ -32,6 +38,8 @@ SPEC REPOS:
     - Differentiator
     - iOSSnapshotTestCase
     - Kingfisher
+    - Realm
+    - RealmSwift
     - RxAtomic
     - RxBlocking
     - RxCocoa
@@ -42,12 +50,14 @@ SPEC CHECKSUMS:
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   iOSSnapshotTestCase: 711379b19f69a22c131527df862352c877c2773c
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Realm: 037c5919b9ceb59d6beed5d3b031096856b119b3
+  RealmSwift: c9580133e73ef40ed340401af2dbc9a5790dfea7
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxBlocking: 138ad53217434444d6eeeb4fb406a45431d92e31
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: f542b0bbf7c30bff2704152e047989850ba80d05
+PODFILE CHECKSUM: b1abdb74ef2a7bc23c8b3738811622d775b6b6ed
 
 COCOAPODS: 1.5.3

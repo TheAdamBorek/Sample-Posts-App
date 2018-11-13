@@ -6,17 +6,26 @@
 import Foundation
 import UIKit
 
- final class MainNavigator {
+final class MainNavigator: PostDetailsNavigating {
     private let window: UIWindow
+    private var postLists: UIViewController?
 
      init(window: UIWindow) {
         self.window = window
     }
 
     func navigateToFirstScene() {
-        let postListViewController = PostsListViewController()
+        let useCase = GetPostsListUseCase(postStorage: RealmPostsStorage())
+        let viewModel = PostsListViewModel(postListUseCase: useCase)
+        viewModel.navigator = self
+        let postListViewController = PostsListViewController(viewModel: viewModel)
         let navigationController = UINavigationController(rootViewController: postListViewController)
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
+        postLists = postListViewController
+    }
+
+    func show(detailsOf post: Post) {
+        PostDetailsNavigator().show(detailsOf: post, onTopOf: postLists)
     }
 }
