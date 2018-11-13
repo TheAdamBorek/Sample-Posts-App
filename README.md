@@ -1,6 +1,9 @@
 # Sample-Posts-App
 
 ## Compilation & run
+
+Xcode 10.1
+
 CocoaPods are included to the project. You should be able to run the project just after you unzip it. 
 
 ## Comments
