@@ -1,10 +1,14 @@
 # Sample-Posts-App
 
-## Compilation & run
+## Instalation
 
 Xcode 10.1
 
-CocoaPods are included to the project. You should be able to run the project just after you unzip it. 
+If you have Bundler run:
+```
+$ sh setup.sh
+```
+
 
 ## Comments
 As a rule I don't use comments. I think comments usually are a code smell and can be easily fixed with a function extraction. 
