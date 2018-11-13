@@ -11,19 +11,6 @@ protocol ReusableView {
     static var reusableIdentifier: String { get }
 }
 
-class RxTableViewCell: UITableViewCell {
-    var disposeBag = DisposeBag()
-
-    func disposeOldBinding() {
-        disposeBag = DisposeBag()
-    }
-
-    override func prepareForReuse() {
-        disposeOldBinding()
-        super.prepareForReuse()
-    }
-}
-
 extension UITableViewCell: ReusableView {
     static var reusableIdentifier: String {
         return String(describing: self)

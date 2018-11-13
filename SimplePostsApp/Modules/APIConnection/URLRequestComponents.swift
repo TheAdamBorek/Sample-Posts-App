@@ -4,6 +4,9 @@
 //
 
 import Foundation
+
+// The Open-Close principle example :)
+// Adding a new request is a matter of new struct/class
 protocol URLRequestComponents {
     var method: HTTPMethod { get }
     var path: String { get }

@@ -244,7 +244,6 @@
 				66CDCBA12197541A00E72A43 /* SnapshotTestCase.swift */,
 				1F0FA8496040DFA07490CC2E /* UnitTestsAppDelegate.swift */,
 				1F0FA64B00F6D5FFF291D627 /* Mocks */,
-				1F0FA4D533FE625A4E8AE48C /* Extensions */,
 			);
 			path = SimplePostsAppTests;
 			sourceTree = "<group>";
@@ -300,13 +299,6 @@
 				668014DD219A18C30079D4A7 /* Comment+fake.swift */,
 			);
 			path = Entities;
-			sourceTree = "<group>";
-		};
-		1F0FA4D533FE625A4E8AE48C /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		1F0FA64B00F6D5FFF291D627 /* Mocks */ = {
