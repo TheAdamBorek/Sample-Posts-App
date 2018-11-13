@@ -1,6 +1,0 @@
-framework module Pods_SimplePostsApp {
-  umbrella header "Pods-SimplePostsApp-umbrella.h"
-
-  export *
-  module * { export * }
-}
