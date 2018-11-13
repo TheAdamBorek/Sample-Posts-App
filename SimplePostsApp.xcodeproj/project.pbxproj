@@ -51,6 +51,7 @@
 		66228627219A4244004D7A48 /* GetUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66228626219A4244004D7A48 /* GetUserUseCase.swift */; };
 		66228629219A438E004D7A48 /* GetCommentsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66228628219A438E004D7A48 /* GetCommentsUseCase.swift */; };
 		6622862B219A4676004D7A48 /* PostDetailsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6622862A219A4676004D7A48 /* PostDetailsNavigator.swift */; };
+		6622862F219A5604004D7A48 /* PostDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6622862E219A5604004D7A48 /* PostDetailsViewModel.swift */; };
 		668014BF2199E94A0079D4A7 /* PostsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668014BE2199E94A0079D4A7 /* PostsStorage.swift */; };
 		668014C12199E9AE0079D4A7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668014C02199E9AE0079D4A7 /* Post.swift */; };
 		668014C32199EA370079D4A7 /* PostsStorageSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668014C22199EA370079D4A7 /* PostsStorageSpy.swift */; };
@@ -142,6 +143,7 @@
 		66228626219A4244004D7A48 /* GetUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserUseCase.swift; sourceTree = "<group>"; };
 		66228628219A438E004D7A48 /* GetCommentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentsUseCase.swift; sourceTree = "<group>"; };
 		6622862A219A4676004D7A48 /* PostDetailsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsNavigator.swift; sourceTree = "<group>"; };
+		6622862E219A5604004D7A48 /* PostDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModel.swift; sourceTree = "<group>"; };
 		668014BE2199E94A0079D4A7 /* PostsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsStorage.swift; sourceTree = "<group>"; };
 		668014C02199E9AE0079D4A7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		668014C22199EA370079D4A7 /* PostsStorageSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsStorageSpy.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				6622862A219A4676004D7A48 /* PostDetailsNavigator.swift */,
 				1F0FA4DD21032B4B259958E4 /* PostDetailsViewController.swift */,
 				66228624219A3FC8004D7A48 /* PostDetailsViewController.xib */,
+				6622862E219A5604004D7A48 /* PostDetailsViewModel.swift */,
 			);
 			path = PostDetails;
 			sourceTree = "<group>";
@@ -718,6 +721,7 @@
 				66228627219A4244004D7A48 /* GetUserUseCase.swift in Sources */,
 				1F0FADB9246B5AE02E043765 /* main.swift in Sources */,
 				1F0FA5EA0F7CACA23C700162 /* UsersStorage.swift in Sources */,
+				6622862F219A5604004D7A48 /* PostDetailsViewModel.swift in Sources */,
 				1F0FA9DE477922F5E4EC5AD0 /* User.swift in Sources */,
 				1F0FAEA93482A5A90C94F285 /* APIClient+Decodable.swift in Sources */,
 				668014C62199FF020079D4A7 /* Rx+mapTo.swift in Sources */,
