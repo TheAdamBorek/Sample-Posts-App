@@ -63,6 +63,14 @@ final class PostsListViewController: BaseViewController {
                 self?.showError(with: message)
             })
             .disposed(by: disposeBag)
+
+        tableView.rx.itemSelected
+            .do(onNext: { [tableView] index in
+                tableView.deselectRow(at: index, animated: false)
+            })
+            .map { $0.row }
+            .bind(to: viewModel.didTapAtIndex)
+            .disposed(by: disposeBag)
     }
 
     private func showError(with message: String) {

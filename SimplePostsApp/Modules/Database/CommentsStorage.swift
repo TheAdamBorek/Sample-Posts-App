@@ -9,7 +9,9 @@ import RealmSwift
 import Foundation
 protocol CommentsStorage {
     func comment(with id: Int) throws -> Comment
+    func comments(for post: Post) throws -> [Comment]
     func allComments() throws -> [Comment]
+
     func save(_ comment: Comment) throws
     func save(_ comments: [Comment]) throws
 }
@@ -24,6 +26,13 @@ final class RealmCommentsStorage: CommentsStorage {
 
     func comment(with id: Int) throws -> Comment {
         return try genericRealm.object(forPrimaryKey: id)
+    }
+
+    func comments(for post: Post) throws -> [Comment] {
+        return try self.realm()
+            .object(ofType: Post.RealmType.self, forPrimaryKey: post.id)
+            .map { $0.comments.compactMap { $0.asDomain() } }
+            ?? []
     }
 
     func allComments() throws -> [Comment] {

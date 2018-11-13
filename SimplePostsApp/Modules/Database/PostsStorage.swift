@@ -71,6 +71,8 @@ final class PostObject: Object {
     @objc dynamic var title: String = ""
     @objc dynamic var body: String = ""
     @objc dynamic var author: UserObject?
+    let comments = LinkingObjects(fromType: CommentObject.self, property: "post")
+    
     override class func primaryKey() -> String? {
         return "id"
     }

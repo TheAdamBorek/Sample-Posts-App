@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38fdad5b-636e-4dd9-835c-cfac539a6447" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Configuration.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Configuration.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/Initializing/BackgroundSyncInitializer.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimplePostsApp/Modules/PostDetails/PostDetailsViewController.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimplePostsApp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimplePostsApp/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/AppDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimplePostsAppTests/Extensions/Bundle+readFile.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimplePostsApp/Extensions/Bundle+readFile.swift" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,18 +14,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_0728123C-EFB5-4A0C-852A-6BDFF91E891F" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Modules/BackgroundSyncUseCase/BackgroundSyncUseCaseTests.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-              <folding>
-                <element signature="e#102#119#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SimplePostsAppTests/Modules/Database/UserStorageTests.swift">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,16 +42,28 @@
         <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimplePostsApp/Configuration.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SimplePostsApp/Configuration.swift">
+        <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/PostDetails/PostDetailsViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="943">
+              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+              <folding>
+                <element signature="e#102#119#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Initializing.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/Initializing/MainNavigator.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Extensions/String+localized.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Shared/BaseViewController.swift" />
@@ -192,6 +186,7 @@
         <option value="$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Extensions/Bundle+readFile.swift" />
         <option value="$PROJECT_DIR$/SimplePostsApp/Configuration.swift" />
+        <option value="$PROJECT_DIR$/SimplePostsApp/Modules/PostDetails/PostDetailsViewController.swift" />
       </list>
     </option>
   </component>
@@ -225,12 +220,6 @@
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
               <item name="SimplePostsApp" type="fcab9f18:XcodeViewNode" />
-              <item name="Extensions" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
-              <item name="SimplePostsApp" type="fcab9f18:XcodeViewNode" />
               <item name="Modules" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
@@ -238,14 +227,7 @@
               <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
               <item name="SimplePostsApp" type="fcab9f18:XcodeViewNode" />
               <item name="Modules" type="fcab9f18:XcodeViewNode" />
-              <item name="APIConnection" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="SimplePostsApp" type="1d218c8b:XcodeProjectNode" />
-              <item name="SimplePostsApp" type="fcab9f18:XcodeViewNode" />
-              <item name="Modules" type="fcab9f18:XcodeViewNode" />
-              <item name="Database" type="fcab9f18:XcodeViewNode" />
+              <item name="PostDetails" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
@@ -402,16 +384,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25079873" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25079873" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info active="true" id="Messages" order="4" sideWeight="0.49946752" visible="true" weight="0.25292864" />
+      <window_info id="Messages" order="4" sideWeight="0.49946752" weight="0.25292864" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946752" weight="0.48114902" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.28186715" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" weight="0.28186715" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -453,13 +434,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/UIKit.UITableView/UIKit.UITableView.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="566" column="16" selection-start-line="566" selection-start-column="16" selection-end-line="566" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SimplePostsApp/Extensions/UIImage+UIColor.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -836,7 +810,7 @@
     <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/PostList/PostsListViewModel.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
@@ -858,6 +832,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimplePostsApp/Modules/PostDetails/PostDetailsViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="943">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <folding>
+            <element signature="e#102#119#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

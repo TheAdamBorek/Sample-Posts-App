@@ -11,11 +11,13 @@ import Foundation
 // For this POC I decided that creating a new type to hide UIImage from ViewModel would be an overkill.
 
 import UIKit
+import RxSwift
 import RxCocoa
 
 protocol PostsListViewModelType {
     var posts: Driver<[PostsListCellViewModelType]> { get }
     var errorMessage: Driver<String> { get }
+    var didTapAtIndex: PublishRelay<Int> { get }
 }
 
 protocol PostsListCellViewModelType {
@@ -27,7 +29,10 @@ protocol PostsListCellViewModelType {
 final class PostsListViewModel: PostsListViewModelType {
     let posts: Driver<[PostsListCellViewModelType]>
     let errorMessage: Driver<String>
+    var navigator: PostDetailsNavigating?
+    let didTapAtIndex = PublishRelay<Int>()
 
+    private let disposeBag = DisposeBag()
     init(postListUseCase: GetPostsListUseCase) {
         let postsResults = postListUseCase.posts().materialize()
             .share(replay: 1)
@@ -39,6 +44,13 @@ final class PostsListViewModel: PostsListViewModelType {
         self.errorMessage = postsResults.errors()
             .mapTo("An error ocured. Please try agains")
             .asDriver(onErrorDriveWith: .empty())
+
+        self.didTapAtIndex
+            .withLatestFrom(postsResults.elemnts()) { index, posts in return posts[index] }
+            .subscribe(onNext: { [weak self] post in
+                self?.navigator?.show(detailsOf: post)
+            })
+            .disposed(by: disposeBag)
     }
 }
 

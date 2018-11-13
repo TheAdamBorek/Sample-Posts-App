@@ -11,7 +11,9 @@ class Storage {
     private let posts: PostsStorage
     private let comments: CommentsStorage
 
-    init(users: UsersStorage, posts: PostsStorage, comments: CommentsStorage) {
+    init(users: UsersStorage = RealmUsersStorage(),
+         posts: PostsStorage = RealmPostsStorage(),
+         comments: CommentsStorage = RealmCommentsStorage()) {
         self.users = users
         self.posts = posts
         self.comments = comments
@@ -62,6 +64,10 @@ extension Storage: PostsStorage {
 extension Storage: CommentsStorage {
     func comment(with id: Int) throws -> Comment {
         return try comments.comment(with: id)
+    }
+
+    func comments(for post: Post) throws -> [Comment] {
+        return try comments.comments(for: post)
     }
 
     func allComments() throws -> [Comment] {
