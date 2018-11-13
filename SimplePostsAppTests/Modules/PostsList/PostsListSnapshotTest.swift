@@ -23,6 +23,9 @@ class DummyPostsListViewModel: PostsListViewModelType {
     var posts: Driver<[PostsListCellViewModelType]> {
         return .just([DummyPostListCellViewModel(), DummyPostListCellViewModel(), DummyPostListCellViewModel()])
     }
+
+    let errorMessage = Driver<String>.empty()
+    let didTapAtIndex = PublishRelay<Int>()
 }
 
 class DummyPostListCellViewModel: PostsListCellViewModelType {

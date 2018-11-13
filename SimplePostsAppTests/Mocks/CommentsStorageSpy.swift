@@ -18,6 +18,10 @@ final class CommentsStorageSpy: CommentsStorage {
         return comment!
     }
 
+    func comments(for post: Post) throws -> [Comment] {
+        fatalError("not implemented")
+    }
+
     func allComments() throws -> [Comment] {
         return comments
     }
